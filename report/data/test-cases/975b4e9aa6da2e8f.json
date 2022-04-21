@@ -1,0 +1,63 @@
+{
+  "uid" : "975b4e9aa6da2e8f",
+  "name" : "test_login01[case1]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650292169655,
+    "stop" : 1650292169655,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'dict' object has no attribute 'url'",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x0000021B0E303FA0>\ncase = {'case_data': \"{'username':'admin01','password':'admin','re_password':'admin','phone':'15736884464','sex':'女','birthda...mail':'19999@163,com'}\", 'case_id': 2, 'case_title': '输入错误的密码', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        print(case)\n>       allure.attach(body=case.url, name='接口路径')\nE       AttributeError: 'dict' object has no attribute 'url'\n\ntestcase\\test_login.py:19: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "10276-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': \"{'username':'admin01','password':'admin','re_password':'admin','phone':'15736884464','sex':'女','birthday':'1995-04-03','qq':'12345@qq.com','email':'19999@163,com'}\", 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "975b4e9aa6da2e8f.json",
+  "parameterValues" : [ "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': \"{'username':'admin01','password':'admin','re_password':'admin','phone':'15736884464','sex':'女','birthday':'1995-04-03','qq':'12345@qq.com','email':'19999@163,com'}\", 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}" ]
+}

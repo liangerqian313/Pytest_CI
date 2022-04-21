@@ -1,0 +1,66 @@
+{
+  "uid" : "763f5c241760cc92",
+  "name" : "test_login01[case1]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650511252490,
+    "stop" : 1650511252490,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: module 'allure' has no attribute 'environment'",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x0000021F5FA798E0>\ncase = {'app_name': '登录接口', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464...:\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'case_id': 2, 'case_title': '输入错误的密码', ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        allure.dynamic.label(LabelType.EPIC,case.get(\"app_name\"))\n        # allure.dynamic.feature(branch)\n>       allure.environment(test_env='localhost')\nE       AttributeError: module 'allure' has no attribute 'environment'\n\ntestcase\\test_login.py:26: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "登录接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "10632-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', 'app_name': '登录接口', 'demo': '嗯嗯'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "763f5c241760cc92.json",
+  "parameterValues" : [ "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', 'app_name': '登录接口', 'demo': '嗯嗯'}" ]
+}

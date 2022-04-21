@@ -1,0 +1,63 @@
+{
+  "uid" : "1ec6c04a9b3fe11",
+  "name" : "test_login01[case0]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "36f2f3d80fe1d5ee04c6e3c3e14bcb9c",
+  "time" : {
+    "start" : 1650457855042,
+    "stop" : 1650457855042,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'case_title' is not defined",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000002C0BF9ACC70>\ncase = {'case_data': '{\"username\":\"admin\",\"password\":\"admin01\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birth...163,com\"}', 'case_id': 1, 'case_title': '输入错误的用户名', 'res': '{\"code\": 100, \"msg\": \"用户名必须以字母开头，由字母和数字组成 6-8位的字符串\"}', ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        # print(case,type(case))\n>       logger.info(\"详细参数为: {}\".format(case[case_title]))\nE       NameError: name 'case_title' is not defined\n\ntestcase\\test_login.py:23: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "5328-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 1, 'case_title': '输入错误的用户名', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin\",\"password\":\"admin01\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 100, \"msg\": \"用户名必须以字母开头，由字母和数字组成 6-8位的字符串\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1ec6c04a9b3fe11.json",
+  "parameterValues" : [ "{'case_id': 1, 'case_title': '输入错误的用户名', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin\",\"password\":\"admin01\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 100, \"msg\": \"用户名必须以字母开头，由字母和数字组成 6-8位的字符串\"}'}" ]
+}

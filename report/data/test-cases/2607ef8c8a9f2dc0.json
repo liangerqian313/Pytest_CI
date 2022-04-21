@@ -1,0 +1,95 @@
+{
+  "uid" : "2607ef8c8a9f2dc0",
+  "name" : "test_login01[case1]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650297860400,
+    "stop" : 1650297860409,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ba2e86d33cf129e8",
+      "name" : "接口路径",
+      "source" : "ba2e86d33cf129e8.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "26f20758d25ebe0d",
+      "name" : "请求参数",
+      "source" : "26f20758d25ebe0d.attach",
+      "type" : "text/plain",
+      "size" : 165
+    }, {
+      "uid" : "4e0295f5990190c5",
+      "name" : "预期结果",
+      "source" : "4e0295f5990190c5.attach",
+      "type" : "text/plain",
+      "size" : 62
+    }, {
+      "uid" : "8436e5bd05d05a05",
+      "name" : "响应结果",
+      "source" : "8436e5bd05d05a05.attach",
+      "type" : "text/plain",
+      "size" : 16
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "11568-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comon.excel_util.CaseData object at 0x000001EFA3843CA0>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2607ef8c8a9f2dc0.json",
+  "parameterValues" : [ "<comon.excel_util.CaseData object at 0x000001EFA3843CA0>" ]
+}

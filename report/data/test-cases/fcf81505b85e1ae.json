@@ -1,0 +1,93 @@
+{
+  "uid" : "fcf81505b85e1ae",
+  "name" : "test_login01[case2]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "f1448aed770d7fdd91df4365d7b3461a",
+  "time" : {
+    "start" : 1650462336076,
+    "stop" : 1650462336079,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: dictionary update sequence element #0 has length 62; 2 is required",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000002BC45F5B700>\ncase = {'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birth...il\":\"19999@163,com\"}', 'case_id': 3, 'case_title': '两次密码输入不一致', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        # print(case,type(case))\n        logger.info(\"详细参数为: {}\".format(case['case_title']))\n        allure.attach(body=case['url'], name='接口路径')\n        allure.attach(body=case['case_data'], name='请求参数')\n        allure.attach(body=case['res'], name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        logger.info('----------->开始执行测试案例:{}'.format(case['case_title']))\n        response = requests.get(url=case['url'], data=eval(case['case_data']))\n        # print(response,type(response))\n        # print(response.text,type(response))\n        # act_res=response.json()\n>       allure.attach(body=dict(response), name='响应结果')\nE       ValueError: dictionary update sequence element #0 has length 62; 2 is required\n\ntestcase\\test_login.py:33: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "ValueError: dictionary update sequence element #0 has length 62; 2 is required",
+    "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000002BC45F5B700>\ncase = {'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birth...il\":\"19999@163,com\"}', 'case_id': 3, 'case_title': '两次密码输入不一致', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        # print(case,type(case))\n        logger.info(\"详细参数为: {}\".format(case['case_title']))\n        allure.attach(body=case['url'], name='接口路径')\n        allure.attach(body=case['case_data'], name='请求参数')\n        allure.attach(body=case['res'], name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        logger.info('----------->开始执行测试案例:{}'.format(case['case_title']))\n        response = requests.get(url=case['url'], data=eval(case['case_data']))\n        # print(response,type(response))\n        # print(response.text,type(response))\n        # act_res=response.json()\n>       allure.attach(body=dict(response), name='响应结果')\nE       ValueError: dictionary update sequence element #0 has length 62; 2 is required\n\ntestcase\\test_login.py:33: ValueError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fc472947646e62e0",
+      "name" : "接口路径",
+      "source" : "fc472947646e62e0.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "2c8b2a06ff524ad1",
+      "name" : "请求参数",
+      "source" : "2c8b2a06ff524ad1.attach",
+      "type" : "text/plain",
+      "size" : 167
+    }, {
+      "uid" : "baee275c620de86a",
+      "name" : "预期结果",
+      "source" : "baee275c620de86a.attach",
+      "type" : "text/plain",
+      "size" : 62
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "6684-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 3, 'case_title': '两次密码输入不一致', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fcf81505b85e1ae.json",
+  "parameterValues" : [ "{'case_id': 3, 'case_title': '两次密码输入不一致', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}" ]
+}

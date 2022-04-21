@@ -1,0 +1,63 @@
+{
+  "uid" : "324f36c423d05489",
+  "name" : "test_login01[case1]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650276274728,
+    "stop" : 1650276274728,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'cases_data' is not defined",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x00000154E71A6A30>\ncase = <comon.excel_util.CaseData object at 0x00000154E716A640>\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        # print(case)\n>       logger.info(\"详细参数为: {}\".format(cases_data))\nE       NameError: name 'cases_data' is not defined\n\ntestcase\\test_login.py:19: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "小扁豆"
+  }, {
+    "name" : "thread",
+    "value" : "10292-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comon.excel_util.CaseData object at 0x00000154E716A640>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "324f36c423d05489.json",
+  "parameterValues" : [ "<comon.excel_util.CaseData object at 0x00000154E716A640>" ]
+}

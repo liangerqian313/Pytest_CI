@@ -1,0 +1,143 @@
+{
+  "uid" : "1000f54ea7ead8f",
+  "name" : "输入错误的密码",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650510123169,
+    "stop" : 1650510123186,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "预期与结果",
+      "time" : {
+        "start" : 1650510123186,
+        "stop" : 1650510123186,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8b76f6c99564a439",
+        "name" : "预期",
+        "source" : "8b76f6c99564a439.json",
+        "type" : "application/json",
+        "size" : 62
+      }, {
+        "uid" : "dceba1cc301c7d63",
+        "name" : "结果",
+        "source" : "dceba1cc301c7d63.json",
+        "type" : "application/json",
+        "size" : 62
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1650510123186,
+        "stop" : 1650510123186,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "8996ce08c747282",
+      "name" : "接口路径",
+      "source" : "8996ce08c747282.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "e9ebe5dde54ddb16",
+      "name" : "请求参数",
+      "source" : "e9ebe5dde54ddb16.attach",
+      "type" : "text/plain",
+      "size" : 165
+    }, {
+      "uid" : "b1e32e8495b6c1b",
+      "name" : "预期结果",
+      "source" : "b1e32e8495b6c1b.attach",
+      "type" : "text/plain",
+      "size" : 62
+    }, {
+      "uid" : "688442957902a7b3",
+      "name" : "响应状态",
+      "source" : "688442957902a7b3.attach",
+      "type" : "text/plain",
+      "size" : 16
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "登录接口"
+  }, {
+    "name" : "feature",
+    "value" : "master"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "13400-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', 'app_name': '登录接口', 'demo': '嗯嗯'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1000f54ea7ead8f.json",
+  "parameterValues" : [ "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', 'app_name': '登录接口', 'demo': '嗯嗯'}" ]
+}

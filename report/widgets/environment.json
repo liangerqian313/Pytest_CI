@@ -1,0 +1,16 @@
+[ {
+  "values" : [ "Mikey" ],
+  "name" : "author"
+}, {
+  "values" : [ "3.8.10" ],
+  "name" : "pythonVersion"
+}, {
+  "values" : [ "2.17.3" ],
+  "name" : "allureVersion"
+}, {
+  "values" : [ "Localhost" ],
+  "name" : "baseUrl"
+}, {
+  "values" : [ "Test" ],
+  "name" : "Department"
+} ]

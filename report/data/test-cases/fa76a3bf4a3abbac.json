@@ -1,0 +1,66 @@
+{
+  "uid" : "fa76a3bf4a3abbac",
+  "name" : "test_login01[case1]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650468992675,
+    "stop" : 1650468992675,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'LabelType' is not defined",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000002286745D160>\ncase = {'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthda...mail\":\"19999@163,com\"}', 'case_id': 2, 'case_title': '输入错误的密码', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        # print(case,type(case))\n        allure.dynamic.feature(branch)\n>       allure.dynamic.label(LabelType.EPIC,cases_data.get(\"case_title\"))\nE       NameError: name 'LabelType' is not defined\n\ntestcase\\test_login.py:24: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "master"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "932-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fa76a3bf4a3abbac.json",
+  "parameterValues" : [ "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}" ]
+}

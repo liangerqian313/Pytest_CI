@@ -1,0 +1,89 @@
+{
+  "uid" : "2a38614dd4805d0e",
+  "name" : "test_login01[case1]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650457959483,
+    "stop" : 1650457959486,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b52c708230822387",
+      "name" : "接口路径",
+      "source" : "b52c708230822387.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "297e596c20f25968",
+      "name" : "请求参数",
+      "source" : "297e596c20f25968.attach",
+      "type" : "text/plain",
+      "size" : 165
+    }, {
+      "uid" : "aad4bdaf85b28802",
+      "name" : "预期结果",
+      "source" : "aad4bdaf85b28802.attach",
+      "type" : "text/plain",
+      "size" : 62
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "3176-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2a38614dd4805d0e.json",
+  "parameterValues" : [ "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}" ]
+}

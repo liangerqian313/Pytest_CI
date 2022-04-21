@@ -1,0 +1,99 @@
+{
+  "uid" : "bf4dba6a6bcfbb23",
+  "name" : "test_login01[case1]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650462891541,
+    "stop" : 1650462891565,
+    "duration" : 24
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: a bytes-like object is required, not 'dict'",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x0000024F68914EB0>\ncase = {'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthda...mail\":\"19999@163,com\"}', 'case_id': 2, 'case_title': '输入错误的密码', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        # print(case,type(case))\n        logger.info(\"详细参数为: {}\".format(case['case_title']))\n        allure.attach(body=case['url'], name='接口路径')\n        allure.attach(body=case['case_data'], name='请求参数')\n        allure.attach(body=case['res'], name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        logger.info('----------->开始执行测试案例:{}'.format(case['case_title']))\n        response = requests.get(url=case['url'], data=eval(case['case_data']))\n        # print(response,type(response))\n        print(response.text,type(response))\n        # act_res=response.json()\n>       allure.attach(body=response.json(), name='响应结果')\n\ntestcase\\test_login.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nD:\\Python\\lib\\site-packages\\allure_commons\\_allure.py:179: in __call__\n    plugin_manager.hook.attach_data(body=body, name=name, attachment_type=attachment_type, extension=extension)\nD:\\Python\\lib\\site-packages\\pluggy\\hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\nD:\\Python\\lib\\site-packages\\pluggy\\manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\nD:\\Python\\lib\\site-packages\\pluggy\\manager.py:84: in <lambda>\n    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(\nD:\\Python\\lib\\site-packages\\allure_pytest\\listener.py:222: in attach_data\n    self.allure_logger.attach_data(uuid4(), body, name=name, attachment_type=attachment_type, extension=extension)\nD:\\Python\\lib\\site-packages\\allure_commons\\reporter.py:119: in attach_data\n    plugin_manager.hook.report_attached_data(body=body, file_name=file_name)\nD:\\Python\\lib\\site-packages\\pluggy\\hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\nD:\\Python\\lib\\site-packages\\pluggy\\manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\nD:\\Python\\lib\\site-packages\\pluggy\\manager.py:84: in <lambda>\n    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <allure_commons.logger.AllureFileLogger object at 0x0000024F67639D90>\nbody = {'code': 1006, 'msg': '密码必须为7-11位字母和数字'}\nfile_name = 'c15ce470-c58d-493d-9ad9-2ffb2f51d9c0-attachment.attach'\n\n    @hookimpl\n    def report_attached_data(self, body, file_name):\n        destination = os.path.join(self._report_dir, file_name)\n        with open(destination, 'wb') as attached_file:\n            if isinstance(body, text_type):\n                attached_file.write(body.encode('utf-8'))\n            else:\n>               attached_file.write(body)\nE               TypeError: a bytes-like object is required, not 'dict'\n\nD:\\Python\\lib\\site-packages\\allure_commons\\logger.py:62: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: a bytes-like object is required, not 'dict'",
+    "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x0000024F68914EB0>\ncase = {'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthda...mail\":\"19999@163,com\"}', 'case_id': 2, 'case_title': '输入错误的密码', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        # print(case,type(case))\n        logger.info(\"详细参数为: {}\".format(case['case_title']))\n        allure.attach(body=case['url'], name='接口路径')\n        allure.attach(body=case['case_data'], name='请求参数')\n        allure.attach(body=case['res'], name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        logger.info('----------->开始执行测试案例:{}'.format(case['case_title']))\n        response = requests.get(url=case['url'], data=eval(case['case_data']))\n        # print(response,type(response))\n        print(response.text,type(response))\n        # act_res=response.json()\n>       allure.attach(body=response.json(), name='响应结果')\n\ntestcase\\test_login.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nD:\\Python\\lib\\site-packages\\allure_commons\\_allure.py:179: in __call__\n    plugin_manager.hook.attach_data(body=body, name=name, attachment_type=attachment_type, extension=extension)\nD:\\Python\\lib\\site-packages\\pluggy\\hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\nD:\\Python\\lib\\site-packages\\pluggy\\manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\nD:\\Python\\lib\\site-packages\\pluggy\\manager.py:84: in <lambda>\n    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(\nD:\\Python\\lib\\site-packages\\allure_pytest\\listener.py:222: in attach_data\n    self.allure_logger.attach_data(uuid4(), body, name=name, attachment_type=attachment_type, extension=extension)\nD:\\Python\\lib\\site-packages\\allure_commons\\reporter.py:119: in attach_data\n    plugin_manager.hook.report_attached_data(body=body, file_name=file_name)\nD:\\Python\\lib\\site-packages\\pluggy\\hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\nD:\\Python\\lib\\site-packages\\pluggy\\manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\nD:\\Python\\lib\\site-packages\\pluggy\\manager.py:84: in <lambda>\n    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <allure_commons.logger.AllureFileLogger object at 0x0000024F67639D90>\nbody = {'code': 1006, 'msg': '密码必须为7-11位字母和数字'}\nfile_name = 'c15ce470-c58d-493d-9ad9-2ffb2f51d9c0-attachment.attach'\n\n    @hookimpl\n    def report_attached_data(self, body, file_name):\n        destination = os.path.join(self._report_dir, file_name)\n        with open(destination, 'wb') as attached_file:\n            if isinstance(body, text_type):\n                attached_file.write(body.encode('utf-8'))\n            else:\n>               attached_file.write(body)\nE               TypeError: a bytes-like object is required, not 'dict'\n\nD:\\Python\\lib\\site-packages\\allure_commons\\logger.py:62: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "891b35a8f5eb9553",
+      "name" : "接口路径",
+      "source" : "891b35a8f5eb9553.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "ee61696e56f66b40",
+      "name" : "请求参数",
+      "source" : "ee61696e56f66b40.attach",
+      "type" : "text/plain",
+      "size" : 165
+    }, {
+      "uid" : "48d0f676dc090f6c",
+      "name" : "预期结果",
+      "source" : "48d0f676dc090f6c.attach",
+      "type" : "text/plain",
+      "size" : 62
+    }, {
+      "uid" : "b7f3931dec1eede4",
+      "name" : "响应结果",
+      "source" : "b7f3931dec1eede4.attach",
+      "type" : "application/octet-stream",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "9604-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bf4dba6a6bcfbb23.json",
+  "parameterValues" : [ "{'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}" ]
+}

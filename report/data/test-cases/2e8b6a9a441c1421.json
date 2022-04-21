@@ -1,0 +1,1032 @@
+{
+  "uid" : "2e8b6a9a441c1421",
+  "name" : "输入错误的用户名",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "36f2f3d80fe1d5ee04c6e3c3e14bcb9c",
+  "time" : {
+    "start" : 1650511270138,
+    "stop" : 1650511270138,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:82: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+  "statusTrace" : "tp = <class 'pytest_assume.plugin.FailedAssumption'>, value = None, tb = None\n\n    def reraise(tp, value, tb=None):\n        try:\n            if value is None:\n                value = tp()\n            if value.__traceback__ is not tb:\n>               raise value.with_traceback(tb)\nE               pytest_assume.plugin.FailedAssumption: \nE               1 Failed Assumptions:\nE               \nE               testcase\\test_login.py:82: AssumptionFailure\nE               >>\tpytest.assume(flag == False)\nE               AssertionError: assert False\n\nD:\\Python\\lib\\site-packages\\six.py:718: FailedAssumption",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 99,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:82: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+    "statusTrace" : "tp = <class 'pytest_assume.plugin.FailedAssumption'>, value = None, tb = None\n\n    def reraise(tp, value, tb=None):\n        try:\n            if value is None:\n                value = tp()\n            if value.__traceback__ is not tb:\n>               raise value.with_traceback(tb)\nE               pytest_assume.plugin.FailedAssumption: \nE               1 Failed Assumptions:\nE               \nE               testcase\\test_login.py:82: AssumptionFailure\nE               >>\tpytest.assume(flag == False)\nE               AssertionError: assert False\n\nD:\\Python\\lib\\site-packages\\six.py:718: FailedAssumption",
+    "steps" : [ {
+      "name" : "预期与结果",
+      "time" : {
+        "start" : 1650511270154,
+        "stop" : 1650511270154,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "21ab0be1d8272c61",
+        "name" : "预期",
+        "source" : "21ab0be1d8272c61.json",
+        "type" : "application/json",
+        "size" : 100
+      }, {
+        "uid" : "f97cba2c0ab3e11c",
+        "name" : "结果",
+        "source" : "f97cba2c0ab3e11c.json",
+        "type" : "application/json",
+        "size" : 101
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应失败原因",
+      "time" : {
+        "start" : 1650511270154,
+        "stop" : 1650511270154,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c908a3751b4a1533",
+        "name" : "数据",
+        "source" : "c908a3751b4a1533.txt",
+        "type" : "text/plain",
+        "size" : 64
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1650511270154,
+        "stop" : 1650511270233,
+        "duration" : 79
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c549a24e0fc504f1",
+      "name" : "接口路径",
+      "source" : "c549a24e0fc504f1.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "a3df1afd594afae2",
+      "name" : "请求参数",
+      "source" : "a3df1afd594afae2.attach",
+      "type" : "text/plain",
+      "size" : 167
+    }, {
+      "uid" : "393607a1531cfbb7",
+      "name" : "预期结果",
+      "source" : "393607a1531cfbb7.attach",
+      "type" : "text/plain",
+      "size" : 100
+    }, {
+      "uid" : "7a1613e37d0d6bd5",
+      "name" : "响应状态",
+      "source" : "7a1613e37d0d6bd5.attach",
+      "type" : "text/plain",
+      "size" : 16
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "登录接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "8616-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 1, 'case_title': '输入错误的用户名', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin\",\"password\":\"admin01\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 100, \"msg\": \"用户名必须以字母开头，由字母和数字组成 6-8位的字符串\"}', 'app_name': '登录接口', 'demo': '嗯嗯'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "42dd9b4c52e62767",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'allure' has no attribute 'environment'",
+      "time" : {
+        "start" : 1650511252411,
+        "stop" : 1650511252411,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a3722350ee31a216",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'allure' has no attribute 'environment'",
+      "time" : {
+        "start" : 1650510618427,
+        "stop" : 1650510618427,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "eaa5c91582ee8222",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:81: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650510303814,
+        "stop" : 1650510303814,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "756c10b770c22ce4",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:81: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650510266066,
+        "stop" : 1650510266066,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5fb671821818c9f3",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:81: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650510194540,
+        "stop" : 1650510194540,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b9ab80769d60e7a4",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:81: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650510123082,
+        "stop" : 1650510123082,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e6fcec3df9376ec1",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:81: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650510084316,
+        "stop" : 1650510084316,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4d3aabc4b665e28c",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:81: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650509990449,
+        "stop" : 1650509990449,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d1fc6f48a1b4615f",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:81: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650509301349,
+        "stop" : 1650509301349,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6367729405836095",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:81: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650509245231,
+        "stop" : 1650509245231,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b44168baff737a85",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:82: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650509029418,
+        "stop" : 1650509029402,
+        "duration" : -16
+      }
+    }, {
+      "uid" : "7b61c9bea8d64af6",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:82: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650508903455,
+        "stop" : 1650508903455,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4de6b8a00aa25c92",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:84: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650508845518,
+        "stop" : 1650508845502,
+        "duration" : -16
+      }
+    }, {
+      "uid" : "dcf728ed814ea36d",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:83: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650508763166,
+        "stop" : 1650508763151,
+        "duration" : -15
+      }
+    }, {
+      "uid" : "26e1e87dfcc2e8e4",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:83: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650508679282,
+        "stop" : 1650508679282,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "168b5ebb5067ab2f",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:83: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650508611676,
+        "stop" : 1650508611676,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f6900fc3ebc91fad",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:81: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650469421664,
+        "stop" : 1650469421664,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a458956405fce0f4",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:81: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650469359152,
+        "stop" : 1650469359152,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "21a98dfe10f30c47",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:80: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650469269603,
+        "stop" : 1650469269603,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b705b240db2b0dea",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:80: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650469223740,
+        "stop" : 1650469223740,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a5862e0e77a45f25",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:78: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650469112229,
+        "stop" : 1650469112229,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7a33895b438cec99",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'LabelType' is not defined",
+      "time" : {
+        "start" : 1650469047702,
+        "stop" : 1650469047702,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a3f82787e777f6d3",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'LabelType' is not defined",
+      "time" : {
+        "start" : 1650468992599,
+        "stop" : 1650468992599,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d6b5e0f77a02fc3d",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:76: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650463034967,
+        "stop" : 1650463034967,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "bb30684012b1ab36",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
+      "time" : {
+        "start" : 1650462891433,
+        "stop" : 1650462891447,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "aa3191d20fd03b55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462517968,
+        "stop" : 1650462518067,
+        "duration" : 99
+      }
+    }, {
+      "uid" : "64cc363bf53daed7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462381716,
+        "stop" : 1650462381738,
+        "duration" : 22
+      }
+    }, {
+      "uid" : "237ab8ed5b0e703a",
+      "status" : "broken",
+      "statusDetails" : "ValueError: dictionary update sequence element #0 has length 101; 2 is required",
+      "time" : {
+        "start" : 1650462335962,
+        "stop" : 1650462335980,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "bb148880f3972428",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462226791,
+        "stop" : 1650462226801,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "c9f737889288178b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462202608,
+        "stop" : 1650462202627,
+        "duration" : 19
+      }
+    }, {
+      "uid" : "866a11692158d9a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462097947,
+        "stop" : 1650462097968,
+        "duration" : 21
+      }
+    }, {
+      "uid" : "d3f1b6e492e1f991",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462048772,
+        "stop" : 1650462048788,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "928d6258d7d7b732",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not Response",
+      "time" : {
+        "start" : 1650461863216,
+        "stop" : 1650461863237,
+        "duration" : 21
+      }
+    }, {
+      "uid" : "6e0eabd9b3283ae2",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
+      "time" : {
+        "start" : 1650461764475,
+        "stop" : 1650461764562,
+        "duration" : 87
+      }
+    }, {
+      "uid" : "fda4d6276f91cb95",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:74: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650458460809,
+        "stop" : 1650458460809,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fef28f02bdfa4b93",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=6666): Max retries exceeded with url: /business/regist_form (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022B6AD6CD60>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))",
+      "time" : {
+        "start" : 1650458389239,
+        "stop" : 1650458391349,
+        "duration" : 2110
+      }
+    }, {
+      "uid" : "9be1655efbb9ddac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650457959469,
+        "stop" : 1650457959481,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "1ec6c04a9b3fe11",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'case_title' is not defined",
+      "time" : {
+        "start" : 1650457855042,
+        "stop" : 1650457855042,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "da22540e73eb7f4",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'case_title' is not defined",
+      "time" : {
+        "start" : 1650457285202,
+        "stop" : 1650457285202,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "19363c4f0067322f",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'case_title' is not defined",
+      "time" : {
+        "start" : 1650457257893,
+        "stop" : 1650457257893,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6929fdf1c682c2d4",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'case_title' is not defined",
+      "time" : {
+        "start" : 1650438383883,
+        "stop" : 1650438383883,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "18459385228651ad",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'case_title' is not defined",
+      "time" : {
+        "start" : 1650437514804,
+        "stop" : 1650437514804,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "40aa9679badec037",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650436482165,
+        "stop" : 1650436482165,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4a75dbdcb63d6bfc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650436310686,
+        "stop" : 1650436310702,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "9ec18d864edf7440",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:75: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650340817289,
+        "stop" : 1650340817289,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "af7e12e437512cee",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:75: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650340342408,
+        "stop" : 1650340342408,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "cb0ff3ad3c758812",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650340154466,
+        "stop" : 1650340154483,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "7eb48f98d90dc337",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650336376200,
+        "stop" : 1650336376212,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "579d98d207188b2c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650336320525,
+        "stop" : 1650336320547,
+        "duration" : 22
+      }
+    }, {
+      "uid" : "576c89488acd3665",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'json' is not defined",
+      "time" : {
+        "start" : 1650336091060,
+        "stop" : 1650336091076,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "7b70103026151c97",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'JsonCompare' is not defined",
+      "time" : {
+        "start" : 1650336052597,
+        "stop" : 1650336052615,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "e2f0988d29f0c8c4",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'JsonCompare' is not defined",
+      "time" : {
+        "start" : 1650333286964,
+        "stop" : 1650333287065,
+        "duration" : 101
+      }
+    }, {
+      "uid" : "c59e486ddd70ada0",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=6666): Max retries exceeded with url: /business/regist_form (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000019125BD1220>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))",
+      "time" : {
+        "start" : 1650333191910,
+        "stop" : 1650333194011,
+        "duration" : 2101
+      }
+    }, {
+      "uid" : "9fe9779ee3051b33",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650297860379,
+        "stop" : 1650297860399,
+        "duration" : 20
+      }
+    }, {
+      "uid" : "4b546b7647b72c5a",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'url' is not defined",
+      "time" : {
+        "start" : 1650297837212,
+        "stop" : 1650297837212,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4d6e0731d398e553",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'url' is not defined",
+      "time" : {
+        "start" : 1650297621236,
+        "stop" : 1650297621236,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "eba458b9d24ce0b5",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'url' is not defined",
+      "time" : {
+        "start" : 1650297161049,
+        "stop" : 1650297161049,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "69840c050d458047",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650297111882,
+        "stop" : 1650297111882,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "25e9f89b23a045b9",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'case_data'",
+      "time" : {
+        "start" : 1650296810771,
+        "stop" : 1650296810787,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "4f90f30239123fb2",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'tuple' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650295856891,
+        "stop" : 1650295856891,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "29209dc6507d144c",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650295734936,
+        "stop" : 1650295734936,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c30ea5ec7b10fa43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650294848124,
+        "stop" : 1650294848128,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "b8b856a36a3ab5d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650294801898,
+        "stop" : 1650294801907,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "802d7e51def0a9bf",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650294494607,
+        "stop" : 1650294494629,
+        "duration" : 22
+      }
+    }, {
+      "uid" : "719dddd5740f9504",
+      "status" : "broken",
+      "statusDetails" : "NameError: name '_res' is not defined",
+      "time" : {
+        "start" : 1650294174642,
+        "stop" : 1650294174652,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "eef961acec365325",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'content'",
+      "time" : {
+        "start" : 1650293739082,
+        "stop" : 1650293739089,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "32554c88a7d361bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650292810099,
+        "stop" : 1650292810123,
+        "duration" : 24
+      }
+    }, {
+      "uid" : "48749f94d57309f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650292754773,
+        "stop" : 1650292754784,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "64fd7f926fc2a12e",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'res_body' is not defined",
+      "time" : {
+        "start" : 1650292731249,
+        "stop" : 1650292731251,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "71b9c3e4b6ee2d02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650292681047,
+        "stop" : 1650292681055,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "bafb9c7e40c5690a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650292631567,
+        "stop" : 1650292631575,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "49a6bc99008ead18",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'act_res' is not defined",
+      "time" : {
+        "start" : 1650292603108,
+        "stop" : 1650292603116,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "34e1f9bd6cf7282a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650292402646,
+        "stop" : 1650292402662,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "bf082a1b964846c4",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650292379883,
+        "stop" : 1650292379896,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "5b2f61b42ee9b60e",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650292169567,
+        "stop" : 1650292169567,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "54c82952d5dbe9ac",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650291425227,
+        "stop" : 1650291425235,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "9ba7e4c4fa15c4ed",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650291374053,
+        "stop" : 1650291374056,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "9f64c1f46a9db39c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650291274598,
+        "stop" : 1650291274613,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "bb22aef31db652c0",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'CaseData' object has no attribute 'cases_data'",
+      "time" : {
+        "start" : 1650276301480,
+        "stop" : 1650276301480,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "81209d2577dd5ccd",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'cases_data' is not defined",
+      "time" : {
+        "start" : 1650276274639,
+        "stop" : 1650276274639,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "137524693c5a0b2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650276143527,
+        "stop" : 1650276143539,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "8c5e6d20fd1f2340",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650276041116,
+        "stop" : 1650276041123,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "8825900814b41b7c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650276018262,
+        "stop" : 1650276018268,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "6956186e5d449572",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650275445196,
+        "stop" : 1650275445196,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "92ca78b2c3a7c57d",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650275311257,
+        "stop" : 1650275311257,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "93b35f997b7e749e",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650275256696,
+        "stop" : 1650275256696,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4f3816cfa8b5fa18",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'case_title'",
+      "time" : {
+        "start" : 1650275232743,
+        "stop" : 1650275232743,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ab26b0dc8f7037d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650274095847,
+        "stop" : 1650274095847,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "974bd36306db0c9d",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650274053659,
+        "stop" : 1650274053659,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "aff20f35365bfc32",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'case_title'",
+      "time" : {
+        "start" : 1650273993714,
+        "stop" : 1650273993714,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "481527ddc27520ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650273941407,
+        "stop" : 1650273941407,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "15d980ca7d02fda0",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: got empty parameter set ['case'], function test_login01 at D:\\Casedemo\\pytest\\testcase\\test_login.py:15",
+      "time" : {
+        "start" : 1650273744939,
+        "stop" : 1650273744939,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6a2731098833be9d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: got empty parameter set ['case'], function test_login01 at D:\\Casedemo\\pytest\\testcase\\test_login.py:15",
+      "time" : {
+        "start" : 1650273673574,
+        "stop" : 1650273673574,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f9c9377b8a52c8ec",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650273393658,
+        "stop" : 1650273393662,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "48c7ab7fd0958382",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650273317525,
+        "stop" : 1650273317612,
+        "duration" : 87
+      }
+    }, {
+      "uid" : "1e03b4ae952123c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650272406887,
+        "stop" : 1650272406978,
+        "duration" : 91
+      }
+    }, {
+      "uid" : "4d386e76dae655e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650272183518,
+        "stop" : 1650272183518,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "91d41157c8b56e77",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650270384082,
+        "stop" : 1650270384082,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f1ec3ea01d797c09",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650265480704,
+        "stop" : 1650265480704,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2e8b6a9a441c1421.json",
+  "parameterValues" : [ "{'case_id': 1, 'case_title': '输入错误的用户名', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin\",\"password\":\"admin01\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 100, \"msg\": \"用户名必须以字母开头，由字母和数字组成 6-8位的字符串\"}', 'app_name': '登录接口', 'demo': '嗯嗯'}" ]
+}

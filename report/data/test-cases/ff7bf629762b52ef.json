@@ -1,0 +1,61 @@
+{
+  "uid" : "ff7bf629762b52ef",
+  "name" : "test_login01[case2]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "f1448aed770d7fdd91df4365d7b3461a",
+  "time" : {
+    "start" : 1650273941420,
+    "stop" : 1650273941420,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "小扁豆"
+  }, {
+    "name" : "thread",
+    "value" : "11392-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 3, 'case_title': '输入用户名为空', 'url': 'www.baidu.com', 'case_data': \"{'username':'','password':'admin'}\", 'res': \"{'msg':'失败','code':'9999'}\"}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff7bf629762b52ef.json",
+  "parameterValues" : [ "{'case_id': 3, 'case_title': '输入用户名为空', 'url': 'www.baidu.com', 'case_data': \"{'username':'','password':'admin'}\", 'res': \"{'msg':'失败','code':'9999'}\"}" ]
+}

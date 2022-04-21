@@ -1,0 +1,927 @@
+{
+  "uid" : "4532c7fd1a6fedab",
+  "name" : "两次密码输入不一致",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "f1448aed770d7fdd91df4365d7b3461a",
+  "time" : {
+    "start" : 1650511270265,
+    "stop" : 1650511270265,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 93,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "预期与结果",
+      "time" : {
+        "start" : 1650511270265,
+        "stop" : 1650511270265,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a3aa4c096641ee7e",
+        "name" : "预期",
+        "source" : "a3aa4c096641ee7e.json",
+        "type" : "application/json",
+        "size" : 62
+      }, {
+        "uid" : "25ac02d6a5ba23f4",
+        "name" : "结果",
+        "source" : "25ac02d6a5ba23f4.json",
+        "type" : "application/json",
+        "size" : 62
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1650511270265,
+        "stop" : 1650511270265,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "71070b2e780e6937",
+      "name" : "接口路径",
+      "source" : "71070b2e780e6937.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "2491ff423ba57f2a",
+      "name" : "请求参数",
+      "source" : "2491ff423ba57f2a.attach",
+      "type" : "text/plain",
+      "size" : 167
+    }, {
+      "uid" : "2a135c5836d1539b",
+      "name" : "预期结果",
+      "source" : "2a135c5836d1539b.attach",
+      "type" : "text/plain",
+      "size" : 62
+    }, {
+      "uid" : "7e80800ab09af33b",
+      "name" : "响应状态",
+      "source" : "7e80800ab09af33b.attach",
+      "type" : "text/plain",
+      "size" : 16
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "登录接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "8616-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 3, 'case_title': '两次密码输入不一致', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', 'app_name': '登录接口', 'demo': '嗯嗯'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7a2c6edd540e3a44",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'allure' has no attribute 'environment'",
+      "time" : {
+        "start" : 1650511252506,
+        "stop" : 1650511252506,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ccb684160cf5403d",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'allure' has no attribute 'environment'",
+      "time" : {
+        "start" : 1650510618511,
+        "stop" : 1650510618511,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c1671c66bd132ee4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650510303924,
+        "stop" : 1650510303924,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c8ebb7b3b8b4a23c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650510266175,
+        "stop" : 1650510266191,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "e7f6b9b591f8ebd0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650510194650,
+        "stop" : 1650510194666,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "e5755e606134a7a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650510123186,
+        "stop" : 1650510123186,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7e60a7b76238a227",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650510084436,
+        "stop" : 1650510084436,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "db4c09b60998530c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650509990558,
+        "stop" : 1650509990569,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "b6c254a56f163e8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650509301496,
+        "stop" : 1650509301504,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "37e6e1ade6899e1a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650509245375,
+        "stop" : 1650509245383,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "127f4eefe6b36f19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650509029571,
+        "stop" : 1650509029580,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "6f0fd49799cfdf28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650508903596,
+        "stop" : 1650508903605,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "1f058417db2c6cc9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650508845670,
+        "stop" : 1650508845678,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "fe6b225ce5508657",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650508763310,
+        "stop" : 1650508763318,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "52393b7963635885",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650508679426,
+        "stop" : 1650508679437,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "70293aa988dca94f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650508612002,
+        "stop" : 1650508612010,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "1570cc75f18c0bec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650469421778,
+        "stop" : 1650469421790,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "c77418dc5f2dd36b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650469359360,
+        "stop" : 1650469359376,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "3f11bdff0ed9f39a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650469269720,
+        "stop" : 1650469269731,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "383ced1928842249",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650469223891,
+        "stop" : 1650469223898,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "a698a3eb3637cbe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650469112349,
+        "stop" : 1650469112355,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "15b53edac4bbdafc",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'LabelType' is not defined",
+      "time" : {
+        "start" : 1650469047788,
+        "stop" : 1650469047788,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "85bd929ee99c68f1",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'LabelType' is not defined",
+      "time" : {
+        "start" : 1650468992675,
+        "stop" : 1650468992675,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e53bd3c7bad9a5ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650463035106,
+        "stop" : 1650463035113,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "892ed4016f1aabfb",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
+      "time" : {
+        "start" : 1650462891593,
+        "stop" : 1650462891602,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "5ae403d3710676ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462518088,
+        "stop" : 1650462518095,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "4b0b7c8a8bb14210",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462381742,
+        "stop" : 1650462381759,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "fcf81505b85e1ae",
+      "status" : "broken",
+      "statusDetails" : "ValueError: dictionary update sequence element #0 has length 62; 2 is required",
+      "time" : {
+        "start" : 1650462336076,
+        "stop" : 1650462336079,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4df3fc190056be75",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462226814,
+        "stop" : 1650462226822,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "c26d755ab2c6bb58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462202641,
+        "stop" : 1650462202642,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "212d72e4765d565f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462097981,
+        "stop" : 1650462097984,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "726244adafcb2a55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650462048806,
+        "stop" : 1650462048809,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a9c1cf62ef5aef05",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not Response",
+      "time" : {
+        "start" : 1650461863445,
+        "stop" : 1650461863452,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "2cd0ad7419b8c061",
+      "status" : "broken",
+      "statusDetails" : "TypeError: a bytes-like object is required, not 'dict'",
+      "time" : {
+        "start" : 1650461764760,
+        "stop" : 1650461764763,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4fb14463d3b7de99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650458461142,
+        "stop" : 1650458461150,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "63237276fc54b2d4",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=6666): Max retries exceeded with url: /business/regist_form (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022B6AF2A160>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))",
+      "time" : {
+        "start" : 1650458393820,
+        "stop" : 1650458395860,
+        "duration" : 2040
+      }
+    }, {
+      "uid" : "1faefa79245f1c9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650457959488,
+        "stop" : 1650457959572,
+        "duration" : 84
+      }
+    }, {
+      "uid" : "dd4d7fa451e3c96f",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'case_title' is not defined",
+      "time" : {
+        "start" : 1650457855134,
+        "stop" : 1650457855134,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a1763937e636f0dd",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'case_title' is not defined",
+      "time" : {
+        "start" : 1650437514893,
+        "stop" : 1650437514893,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9c07374bda5b5405",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650436482176,
+        "stop" : 1650436482176,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b1612e6fafb191b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650436310706,
+        "stop" : 1650436310706,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "681c452425c2d12d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650340817402,
+        "stop" : 1650340817423,
+        "duration" : 21
+      }
+    }, {
+      "uid" : "2afea2d0dbbfdf82",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650340342726,
+        "stop" : 1650340342735,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "79e2e25d1c1e766",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650340154494,
+        "stop" : 1650340154502,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "5d6cfc4744b94454",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650336376229,
+        "stop" : 1650336376237,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "8a7da0a2e665ac87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650336320640,
+        "stop" : 1650336320657,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "238a98cbce5c191a",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'json' is not defined",
+      "time" : {
+        "start" : 1650336091173,
+        "stop" : 1650336091181,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "ef35e7c3a59b479c",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'JsonCompare' is not defined",
+      "time" : {
+        "start" : 1650336052712,
+        "stop" : 1650336052723,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "7cf6d81424bb752b",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'JsonCompare' is not defined",
+      "time" : {
+        "start" : 1650333287168,
+        "stop" : 1650333287176,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "3e4651d3d96f80dc",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=6666): Max retries exceeded with url: /business/regist_form (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000019125BC7E50>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))",
+      "time" : {
+        "start" : 1650333196486,
+        "stop" : 1650333198520,
+        "duration" : 2034
+      }
+    }, {
+      "uid" : "d76d445e20549c07",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650297860411,
+        "stop" : 1650297860412,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "92a5546f394a26cf",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'url' is not defined",
+      "time" : {
+        "start" : 1650297837395,
+        "stop" : 1650297837395,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3ac9dc698bba2730",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'url' is not defined",
+      "time" : {
+        "start" : 1650297621404,
+        "stop" : 1650297621404,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "41ea0a6c9eaf435",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'url' is not defined",
+      "time" : {
+        "start" : 1650297161153,
+        "stop" : 1650297161153,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6673e1c4d6c05605",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650297111970,
+        "stop" : 1650297111970,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ed295a95f7edd472",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'case_data'",
+      "time" : {
+        "start" : 1650296810859,
+        "stop" : 1650296810859,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e7c56423fcdd99d",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'tuple' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650295857046,
+        "stop" : 1650295857046,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d7df647b186359c9",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650295735026,
+        "stop" : 1650295735026,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d57fad4f41ffe7e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650294848131,
+        "stop" : 1650294848133,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6df26dad9e8fba92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650294801910,
+        "stop" : 1650294801911,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "aaa48aa3c71c7c99",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650294494720,
+        "stop" : 1650294494728,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "9aa8b030261349b6",
+      "status" : "broken",
+      "statusDetails" : "NameError: name '_res' is not defined",
+      "time" : {
+        "start" : 1650294174736,
+        "stop" : 1650294174742,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "c621a97ac3442d28",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'content'",
+      "time" : {
+        "start" : 1650293739184,
+        "stop" : 1650293739186,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b7362775e114e950",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650292810134,
+        "stop" : 1650292810219,
+        "duration" : 85
+      }
+    }, {
+      "uid" : "e1a61fb92566ada4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650292754870,
+        "stop" : 1650292754887,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "bf7ee10e924ca57b",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'res_body' is not defined",
+      "time" : {
+        "start" : 1650292731341,
+        "stop" : 1650292731343,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e6048c035e269539",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650292681071,
+        "stop" : 1650292681072,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7aaf4f0420b9cedf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650292631583,
+        "stop" : 1650292631589,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "82a0b0a73f9345c7",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'act_res' is not defined",
+      "time" : {
+        "start" : 1650292603209,
+        "stop" : 1650292603216,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "eb2a98edc6e93a19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650292402680,
+        "stop" : 1650292402684,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "a8cef57e75e5734a",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650292380052,
+        "stop" : 1650292380052,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9fb91cece7d7991c",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650292169655,
+        "stop" : 1650292169655,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2de9b39ab2e8e04b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650291425322,
+        "stop" : 1650291425323,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8f7bc38980a3efd",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650291374134,
+        "stop" : 1650291374136,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5d13dc5b06669945",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650291274623,
+        "stop" : 1650291274627,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "7f29ebde6f23e688",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'CaseData' object has no attribute 'cases_data'",
+      "time" : {
+        "start" : 1650276301576,
+        "stop" : 1650276301576,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b67385ad75e0f487",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'cases_data' is not defined",
+      "time" : {
+        "start" : 1650276274731,
+        "stop" : 1650276274731,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3ef742098812511",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650276143543,
+        "stop" : 1650276143546,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a9224664aeeb35aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650276041126,
+        "stop" : 1650276041208,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "fad0f138468ad9ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650276018273,
+        "stop" : 1650276018274,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "34dfa4869583c5d6",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650275445373,
+        "stop" : 1650275445373,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "38e460cfab78b316",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650275311340,
+        "stop" : 1650275311340,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a56b6e7cf4f9df5f",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650275256772,
+        "stop" : 1650275256772,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1373124013877c73",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'case_title'",
+      "time" : {
+        "start" : 1650275232829,
+        "stop" : 1650275232829,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "dd7171418145debf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650274095863,
+        "stop" : 1650274095863,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ac88cd6977ba6ba3",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'url'",
+      "time" : {
+        "start" : 1650274053738,
+        "stop" : 1650274053738,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "12ba4917b58bc3b9",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'case_title'",
+      "time" : {
+        "start" : 1650273993897,
+        "stop" : 1650273993897,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ff7bf629762b52ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650273941420,
+        "stop" : 1650273941420,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "eb15e2997f05e9e7",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650273393740,
+        "stop" : 1650273393742,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4f1c3ec70f63f4e0",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'CaseData' object is not subscriptable",
+      "time" : {
+        "start" : 1650273317706,
+        "stop" : 1650273317712,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "1cf754e5c1d16577",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650272406985,
+        "stop" : 1650272406986,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7ea025e63ac0dc79",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650272183535,
+        "stop" : 1650272183535,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "55ed6dd21db0ee17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650270384182,
+        "stop" : 1650270384182,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4532c7fd1a6fedab.json",
+  "parameterValues" : [ "{'case_id': 3, 'case_title': '两次密码输入不一致', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', 'app_name': '登录接口', 'demo': '嗯嗯'}" ]
+}

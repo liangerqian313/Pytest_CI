@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Apr 21 11:21:10 CST 2022","Thu Apr 21 11:21:10 CST 2022","15","testcase","test_login","TestLogin","","","输入错误的密码",""
+"passed","Thu Apr 21 11:21:10 CST 2022","Thu Apr 21 11:21:10 CST 2022","0","testcase","test_login","TestLogin","","","两次密码输入不一致",""
+"failed","Thu Apr 21 11:21:10 CST 2022","Thu Apr 21 11:21:10 CST 2022","0","testcase","test_login","TestLogin","","","输入错误的用户名",""
+"failed","Thu Apr 21 11:21:10 CST 2022","Thu Apr 21 11:21:10 CST 2022","0","testcase","test_login","TestLogin","","","确认密码输入为空",""

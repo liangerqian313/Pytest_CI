@@ -1,0 +1,89 @@
+{
+  "uid" : "fad0f138468ad9ea",
+  "name" : "test_login01[case2]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "f1448aed770d7fdd91df4365d7b3461a",
+  "time" : {
+    "start" : 1650276018273,
+    "stop" : 1650276018274,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b1d92e4463be74d0",
+      "name" : "接口路径",
+      "source" : "b1d92e4463be74d0.attach",
+      "type" : "text/plain",
+      "size" : 13
+    }, {
+      "uid" : "3e74c5792964ae4a",
+      "name" : "请求参数",
+      "source" : "3e74c5792964ae4a.attach",
+      "type" : "text/plain",
+      "size" : 34
+    }, {
+      "uid" : "5c932f90e9bf131",
+      "name" : "预期结果",
+      "source" : "5c932f90e9bf131.attach",
+      "type" : "text/plain",
+      "size" : 30
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "小扁豆"
+  }, {
+    "name" : "thread",
+    "value" : "12068-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comon.excel_util.CaseData object at 0x0000015A343BC610>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fad0f138468ad9ea.json",
+  "parameterValues" : [ "<comon.excel_util.CaseData object at 0x0000015A343BC610>" ]
+}

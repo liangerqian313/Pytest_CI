@@ -1,0 +1,162 @@
+{
+  "uid" : "af7e12e437512cee",
+  "name" : "test_login01[case0]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "36f2f3d80fe1d5ee04c6e3c3e14bcb9c",
+  "time" : {
+    "start" : 1650340342408,
+    "stop" : 1650340342408,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:75: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+  "statusTrace" : "tp = <class 'pytest_assume.plugin.FailedAssumption'>, value = None, tb = None\n\n    def reraise(tp, value, tb=None):\n        try:\n            if value is None:\n                value = tp()\n            if value.__traceback__ is not tb:\n>               raise value.with_traceback(tb)\nE               pytest_assume.plugin.FailedAssumption: \nE               1 Failed Assumptions:\nE               \nE               testcase\\test_login.py:75: AssumptionFailure\nE               >>\tpytest.assume(flag == False)\nE               AssertionError: assert False\n\nD:\\Python\\lib\\site-packages\\six.py:718: FailedAssumption",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:75: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+    "statusTrace" : "tp = <class 'pytest_assume.plugin.FailedAssumption'>, value = None, tb = None\n\n    def reraise(tp, value, tb=None):\n        try:\n            if value is None:\n                value = tp()\n            if value.__traceback__ is not tb:\n>               raise value.with_traceback(tb)\nE               pytest_assume.plugin.FailedAssumption: \nE               1 Failed Assumptions:\nE               \nE               testcase\\test_login.py:75: AssumptionFailure\nE               >>\tpytest.assume(flag == False)\nE               AssertionError: assert False\n\nD:\\Python\\lib\\site-packages\\six.py:718: FailedAssumption",
+    "steps" : [ {
+      "name" : "预期与结果",
+      "time" : {
+        "start" : 1650340342425,
+        "stop" : 1650340342426,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "98e84be9215e30d8",
+        "name" : "预期",
+        "source" : "98e84be9215e30d8.json",
+        "type" : "application/json",
+        "size" : 100
+      }, {
+        "uid" : "3a59151408480fb0",
+        "name" : "结果",
+        "source" : "3a59151408480fb0.json",
+        "type" : "application/json",
+        "size" : 101
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应失败原因",
+      "time" : {
+        "start" : 1650340342426,
+        "stop" : 1650340342426,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8b6e295d51cdc928",
+        "name" : "数据",
+        "source" : "8b6e295d51cdc928.txt",
+        "type" : "text/plain",
+        "size" : 64
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1650340342426,
+        "stop" : 1650340342682,
+        "duration" : 256
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "da2f4c8284d1a2d7",
+      "name" : "接口路径",
+      "source" : "da2f4c8284d1a2d7.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "deec73b71c5c97d9",
+      "name" : "请求参数",
+      "source" : "deec73b71c5c97d9.attach",
+      "type" : "text/plain",
+      "size" : 167
+    }, {
+      "uid" : "10e17ff542236e2c",
+      "name" : "预期结果",
+      "source" : "10e17ff542236e2c.attach",
+      "type" : "text/plain",
+      "size" : 100
+    }, {
+      "uid" : "15d7384a822d0877",
+      "name" : "响应结果",
+      "source" : "15d7384a822d0877.attach",
+      "type" : "text/plain",
+      "size" : 16
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "9208-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comon.excel_util.CaseData object at 0x0000029D9464D490>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "af7e12e437512cee.json",
+  "parameterValues" : [ "<comon.excel_util.CaseData object at 0x0000029D9464D490>" ]
+}

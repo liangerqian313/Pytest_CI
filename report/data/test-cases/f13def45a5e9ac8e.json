@@ -1,0 +1,66 @@
+{
+  "uid" : "f13def45a5e9ac8e",
+  "name" : "test_login01[case3]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "1ee099853c08e83b466b85648f89aead",
+  "time" : {
+    "start" : 1650511252506,
+    "stop" : 1650511252506,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: module 'allure' has no attribute 'environment'",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x0000021F5FAA1AF0>\ncase = {'app_name': '注册接口', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'case_id': 4, 'case_title': '确认密码输入为空', ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        allure.dynamic.label(LabelType.EPIC,case.get(\"app_name\"))\n        # allure.dynamic.feature(branch)\n>       allure.environment(test_env='localhost')\nE       AttributeError: module 'allure' has no attribute 'environment'\n\ntestcase\\test_login.py:26: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "注册接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "10632-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 4, 'case_title': '确认密码输入为空', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1005, \"msg\": \"重复密码不能为空\"}', 'app_name': '注册接口', 'demo': '啊啊'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f13def45a5e9ac8e.json",
+  "parameterValues" : [ "{'case_id': 4, 'case_title': '确认密码输入为空', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1005, \"msg\": \"重复密码不能为空\"}', 'app_name': '注册接口', 'demo': '啊啊'}" ]
+}

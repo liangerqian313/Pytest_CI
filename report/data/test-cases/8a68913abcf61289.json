@@ -1,0 +1,93 @@
+{
+  "uid" : "8a68913abcf61289",
+  "name" : "输入错误的用户名",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650273393725,
+    "stop" : 1650273393725,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'CaseData' object is not subscriptable",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000002EE1E318DC0>\ncase = <comon.excel_util.CaseData object at 0x000002EE1E2DB5E0>\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n    \n        allure.dynamic.title(case.case_title)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n        allure.attach(body=case.res, name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n>       logger.info('----------->开始执行测试案例:{}'.format(case['case_id']))\nE       TypeError: 'CaseData' object is not subscriptable\n\ntestcase\\test_login.py:24: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: 'CaseData' object is not subscriptable",
+    "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000002EE1E318DC0>\ncase = <comon.excel_util.CaseData object at 0x000002EE1E2DB5E0>\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n    \n        allure.dynamic.title(case.case_title)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n        allure.attach(body=case.res, name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n>       logger.info('----------->开始执行测试案例:{}'.format(case['case_id']))\nE       TypeError: 'CaseData' object is not subscriptable\n\ntestcase\\test_login.py:24: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7ce47c067ef16abd",
+      "name" : "接口路径",
+      "source" : "7ce47c067ef16abd.attach",
+      "type" : "text/plain",
+      "size" : 13
+    }, {
+      "uid" : "e5dc8bca5c9ca36e",
+      "name" : "请求参数",
+      "source" : "e5dc8bca5c9ca36e.attach",
+      "type" : "text/plain",
+      "size" : 40
+    }, {
+      "uid" : "4a7ca1ec972053d",
+      "name" : "预期结果",
+      "source" : "4a7ca1ec972053d.attach",
+      "type" : "text/plain",
+      "size" : 30
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "小扁豆"
+  }, {
+    "name" : "thread",
+    "value" : "6108-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comon.excel_util.CaseData object at 0x000002EE1E2DB5E0>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8a68913abcf61289.json",
+  "parameterValues" : [ "<comon.excel_util.CaseData object at 0x000002EE1E2DB5E0>" ]
+}

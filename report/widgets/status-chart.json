@@ -1,0 +1,41 @@
+[ {
+  "uid" : "efc82d74b34bfac0",
+  "name" : "输入错误的密码",
+  "time" : {
+    "start" : 1650511270250,
+    "stop" : 1650511270265,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4532c7fd1a6fedab",
+  "name" : "两次密码输入不一致",
+  "time" : {
+    "start" : 1650511270265,
+    "stop" : 1650511270265,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e8b6a9a441c1421",
+  "name" : "输入错误的用户名",
+  "time" : {
+    "start" : 1650511270138,
+    "stop" : 1650511270138,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ddbafef8ae34cbd",
+  "name" : "确认密码输入为空",
+  "time" : {
+    "start" : 1650511270265,
+    "stop" : 1650511270265,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

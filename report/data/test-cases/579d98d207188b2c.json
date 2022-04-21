@@ -1,0 +1,122 @@
+{
+  "uid" : "579d98d207188b2c",
+  "name" : "test_login01[case0]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "36f2f3d80fe1d5ee04c6e3c3e14bcb9c",
+  "time" : {
+    "start" : 1650336320525,
+    "stop" : 1650336320547,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "预期与结果",
+      "time" : {
+        "start" : 1650336320546,
+        "stop" : 1650336320547,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "85e2cb254d844b3f",
+        "name" : "预期",
+        "source" : "85e2cb254d844b3f.json",
+        "type" : "application/json",
+        "size" : 101
+      }, {
+        "uid" : "e6aaab64bee61ac0",
+        "name" : "结果",
+        "source" : "e6aaab64bee61ac0.json",
+        "type" : "application/json",
+        "size" : 101
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "14d39044b4bdf394",
+      "name" : "接口路径",
+      "source" : "14d39044b4bdf394.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "d08fd48b0d075c2c",
+      "name" : "请求参数",
+      "source" : "d08fd48b0d075c2c.attach",
+      "type" : "text/plain",
+      "size" : 167
+    }, {
+      "uid" : "946cd5d10d922bda",
+      "name" : "预期结果",
+      "source" : "946cd5d10d922bda.attach",
+      "type" : "text/plain",
+      "size" : 101
+    }, {
+      "uid" : "bf859b5e7331e40",
+      "name" : "响应结果",
+      "source" : "bf859b5e7331e40.attach",
+      "type" : "text/plain",
+      "size" : 16
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "13876-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comon.excel_util.CaseData object at 0x00000218862F0B20>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "579d98d207188b2c.json",
+  "parameterValues" : [ "<comon.excel_util.CaseData object at 0x00000218862F0B20>" ]
+}

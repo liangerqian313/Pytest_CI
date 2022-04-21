@@ -1,0 +1,63 @@
+{
+  "uid" : "540d4b00a485ebfe",
+  "name" : "test_login01[case1]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650457257974,
+    "stop" : 1650457257974,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'case_title' is not defined",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x0000020FB4E43F40>\ncase = {'case_data': {'age': '13', 'name': 'aa'}, 'case_title': '还不得不信', 'url': 'www.baidu.com'}\n\n    @pytest.mark.parametrize('case',[{'case_title':'我就不信了','url':'www.baidu.com','case_data':{'name':'aa','age':'13'}},\n                                     {'case_title':'还不得不信','url':'www.baidu.com','case_data':{'name':'aa','age':'13'}}])\n    def test_login01(self, case):\n        # print(case,type(case))\n>       logger.info(\"详细参数为: {}\".format(case[case_title]))\nE       NameError: name 'case_title' is not defined\n\ntestcase\\test_login.py:24: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "16240-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_title': '还不得不信', 'url': 'www.baidu.com', 'case_data': {'name': 'aa', 'age': '13'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "540d4b00a485ebfe.json",
+  "parameterValues" : [ "{'case_title': '还不得不信', 'url': 'www.baidu.com', 'case_data': {'name': 'aa', 'age': '13'}}" ]
+}

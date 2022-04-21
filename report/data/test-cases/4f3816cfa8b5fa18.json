@@ -1,0 +1,63 @@
+{
+  "uid" : "4f3816cfa8b5fa18",
+  "name" : "test_login01[case0]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "36f2f3d80fe1d5ee04c6e3c3e14bcb9c",
+  "time" : {
+    "start" : 1650275232743,
+    "stop" : 1650275232743,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'dict' object has no attribute 'case_title'",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000001B894A08AC0>\ncase = {'case_data': \"{'username':'admin','password':'admin'}\", 'case_id': 1, 'case_title': '输入正确的用户名和密码', 'res': \"{'msg':'成功','code':'0000'}\", ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n>       allure.dynamic.title(case.case_title)\nE       AttributeError: 'dict' object has no attribute 'case_title'\n\ntestcase\\test_login.py:18: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "小扁豆"
+  }, {
+    "name" : "thread",
+    "value" : "2360-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 1, 'case_title': '输入正确的用户名和密码', 'url': 'www.baidu.com', 'case_data': \"{'username':'admin','password':'admin'}\", 'res': \"{'msg':'成功','code':'0000'}\"}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4f3816cfa8b5fa18.json",
+  "parameterValues" : [ "{'case_id': 1, 'case_title': '输入正确的用户名和密码', 'url': 'www.baidu.com', 'case_data': \"{'username':'admin','password':'admin'}\", 'res': \"{'msg':'成功','code':'0000'}\"}" ]
+}

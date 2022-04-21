@@ -1,0 +1,13 @@
+-
+  name: 登录接口
+  request:
+    url: www.baidu.com
+    method: post
+    headers:
+      Content-Type: application/json
+    params:
+      username: 每每
+      pwd: 123qwe
+      id: 1
+  assert:
+    - Equal: {msg: 登录成功}

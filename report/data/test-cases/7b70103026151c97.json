@@ -1,0 +1,128 @@
+{
+  "uid" : "7b70103026151c97",
+  "name" : "test_login01[case0]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "36f2f3d80fe1d5ee04c6e3c3e14bcb9c",
+  "time" : {
+    "start" : 1650336052597,
+    "stop" : 1650336052615,
+    "duration" : 18
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'JsonCompare' is not defined",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x0000023B520843D0>\ncase = <comon.excel_util.CaseData object at 0x0000023B520849A0>\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        # print(type(case))\n        logger.info(\"详细参数为: {}\".format(case))\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n        allure.attach(body=case.res, name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        logger.info('----------->开始执行测试案例:{}'.format(case.case_title))\n        response = requests.get(url=case.url, data=eval(case.case_data))\n        # act_res=response.json()\n        allure.attach(body=str(response), name='响应结果')\n        # # 校验\n        flag = False\n        # 返回结果\n        if not response:\n            flag = True\n            with allure.step(\"错误原因\"):\n                allure.attach(\"接口异常，没有获取到响应结果\", \"结果\", allure.attachment_type.TEXT)\n        else:\n            _res = response.content.decode(encoding=\"utf-8\")\n            logger.info('返回结果:{0}'.format(_res))\n            logger.info('预期:{}'.format(case.res))\n            logger.info('实际:{}'.format(_res))\n            with allure.step(\"预期与结果\"):\n                allure.attach(case.res, \"预期\", allure.attachment_type.JSON)\n                allure.attach(_res, \"结果\", allure.attachment_type.JSON)\n>               data, frame = JsonCompare().cmp(json.loads(case.res), json.loads(_res))\nE               NameError: name 'JsonCompare' is not defined\n\ntestcase\\test_login.py:43: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'JsonCompare' is not defined",
+    "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x0000023B520843D0>\ncase = <comon.excel_util.CaseData object at 0x0000023B520849A0>\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        # print(type(case))\n        logger.info(\"详细参数为: {}\".format(case))\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n        allure.attach(body=case.res, name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        logger.info('----------->开始执行测试案例:{}'.format(case.case_title))\n        response = requests.get(url=case.url, data=eval(case.case_data))\n        # act_res=response.json()\n        allure.attach(body=str(response), name='响应结果')\n        # # 校验\n        flag = False\n        # 返回结果\n        if not response:\n            flag = True\n            with allure.step(\"错误原因\"):\n                allure.attach(\"接口异常，没有获取到响应结果\", \"结果\", allure.attachment_type.TEXT)\n        else:\n            _res = response.content.decode(encoding=\"utf-8\")\n            logger.info('返回结果:{0}'.format(_res))\n            logger.info('预期:{}'.format(case.res))\n            logger.info('实际:{}'.format(_res))\n            with allure.step(\"预期与结果\"):\n                allure.attach(case.res, \"预期\", allure.attachment_type.JSON)\n                allure.attach(_res, \"结果\", allure.attachment_type.JSON)\n>               data, frame = JsonCompare().cmp(json.loads(case.res), json.loads(_res))\nE               NameError: name 'JsonCompare' is not defined\n\ntestcase\\test_login.py:43: NameError",
+    "steps" : [ {
+      "name" : "预期与结果",
+      "time" : {
+        "start" : 1650336052614,
+        "stop" : 1650336052615,
+        "duration" : 1
+      },
+      "status" : "broken",
+      "statusMessage" : "NameError: name 'JsonCompare' is not defined\n",
+      "statusTrace" : "  File \"D:\\Casedemo\\pytest\\testcase\\test_login.py\", line 43, in test_login01\n    data, frame = JsonCompare().cmp(json.loads(case.res), json.loads(_res))\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ec31d28f99d9f461",
+        "name" : "预期",
+        "source" : "ec31d28f99d9f461.json",
+        "type" : "application/json",
+        "size" : 101
+      }, {
+        "uid" : "d43da43a3fef9797",
+        "name" : "结果",
+        "source" : "d43da43a3fef9797.json",
+        "type" : "application/json",
+        "size" : 101
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "8d693dfa13e2db2d",
+      "name" : "接口路径",
+      "source" : "8d693dfa13e2db2d.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "b07897a383064bfd",
+      "name" : "请求参数",
+      "source" : "b07897a383064bfd.attach",
+      "type" : "text/plain",
+      "size" : 167
+    }, {
+      "uid" : "c1807a93f58f3ef8",
+      "name" : "预期结果",
+      "source" : "c1807a93f58f3ef8.attach",
+      "type" : "text/plain",
+      "size" : 101
+    }, {
+      "uid" : "46ec3fcfde3284da",
+      "name" : "响应结果",
+      "source" : "46ec3fcfde3284da.attach",
+      "type" : "text/plain",
+      "size" : 16
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "9500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comon.excel_util.CaseData object at 0x0000023B520849A0>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7b70103026151c97.json",
+  "parameterValues" : [ "<comon.excel_util.CaseData object at 0x0000023B520849A0>" ]
+}

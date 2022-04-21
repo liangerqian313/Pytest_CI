@@ -1,0 +1,180 @@
+test_login.py-[LineNo:19]-2022-04-19 00:00:21,236-INFO-详细参数为: {'case_id': 1, 'case_title': '输入错误的用户名', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{"username":"admin","password":"admin01","re_password":"admin01","phone":"15736884464","sex":"女","birthday":"1995-04-03","qq":"12345@qq.com","email":"19999@163,com"}', 'res': '{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}'}
+test_login.py-[LineNo:19]-2022-04-19 00:00:21,329-INFO-详细参数为: {'case_id': 2, 'case_title': '输入错误的密码', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{"username":"admin01","password":"admin","re_password":"admin","phone":"15736884464","sex":"女","birthday":"1995-04-03","qq":"12345@qq.com","email":"19999@163,com"}', 'res': '{"code": 1006, "msg": "密码必须为7-11位字母和数字"}'}
+test_login.py-[LineNo:19]-2022-04-19 00:00:21,403-INFO-详细参数为: {'case_id': 3, 'case_title': '两次密码输入不一致', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{"username":"admin01","password":"admin","re_password":"admin01","phone":"15736884464","sex":"女","birthday":"1995-04-03","qq":"12345@qq.com","email":"19999@163,com"}', 'res': '{"code": 1006, "msg": "密码必须为7-11位字母和数字"}'}
+test_login.py-[LineNo:19]-2022-04-19 00:03:57,212-INFO-详细参数为: <comon.excel_util.CaseData object at 0x00000235AB8B4940>
+test_login.py-[LineNo:19]-2022-04-19 00:03:57,312-INFO-详细参数为: <comon.excel_util.CaseData object at 0x00000235AB861C10>
+test_login.py-[LineNo:19]-2022-04-19 00:03:57,394-INFO-详细参数为: <comon.excel_util.CaseData object at 0x00000235AB861B50>
+test_login.py-[LineNo:19]-2022-04-19 00:04:20,378-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000001EFA3843D60>
+test_login.py-[LineNo:23]-2022-04-19 00:04:20,388-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 00:04:20,389-INFO------------>开始执行测试案例:输入错误的用户名
+test_login.py-[LineNo:19]-2022-04-19 00:04:20,400-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000001EFA3843CA0>
+test_login.py-[LineNo:23]-2022-04-19 00:04:20,401-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 00:04:20,401-INFO------------>开始执行测试案例:输入错误的密码
+test_login.py-[LineNo:19]-2022-04-19 00:04:20,410-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000001EFA3880BB0>
+test_login.py-[LineNo:23]-2022-04-19 00:04:20,412-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 00:04:20,412-INFO------------>开始执行测试案例:两次密码输入不一致
+test_login.py-[LineNo:19]-2022-04-19 09:53:11,910-INFO-详细参数为: <comon.excel_util.CaseData object at 0x0000019125B64D90>
+test_login.py-[LineNo:23]-2022-04-19 09:53:11,911-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 09:53:11,911-INFO------------>开始执行测试案例:输入错误的用户名
+test_login.py-[LineNo:19]-2022-04-19 09:53:14,279-INFO-详细参数为: <comon.excel_util.CaseData object at 0x0000019125B64CD0>
+test_login.py-[LineNo:23]-2022-04-19 09:53:14,281-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 09:53:14,281-INFO------------>开始执行测试案例:输入错误的密码
+test_login.py-[LineNo:19]-2022-04-19 09:53:16,485-INFO-详细参数为: <comon.excel_util.CaseData object at 0x0000019125BA0BE0>
+test_login.py-[LineNo:23]-2022-04-19 09:53:16,500-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 09:53:16,500-INFO------------>开始执行测试案例:两次密码输入不一致
+test_login.py-[LineNo:19]-2022-04-19 09:54:46,963-INFO-详细参数为: <comon.excel_util.CaseData object at 0x00000256F38A4940>
+test_login.py-[LineNo:23]-2022-04-19 09:54:46,969-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 09:54:46,969-INFO------------>开始执行测试案例:输入错误的用户名
+test_login.py-[LineNo:37]-2022-04-19 09:54:47,053-INFO-返回结果:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:38]-2022-04-19 09:54:47,053-INFO-预期:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:39]-2022-04-19 09:54:47,053-INFO-实际:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:19]-2022-04-19 09:54:47,153-INFO-详细参数为: <comon.excel_util.CaseData object at 0x00000256F3852C10>
+test_login.py-[LineNo:23]-2022-04-19 09:54:47,154-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 09:54:47,154-INFO------------>开始执行测试案例:输入错误的密码
+test_login.py-[LineNo:37]-2022-04-19 09:54:47,160-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:38]-2022-04-19 09:54:47,160-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:39]-2022-04-19 09:54:47,160-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:19]-2022-04-19 09:54:47,168-INFO-详细参数为: <comon.excel_util.CaseData object at 0x00000256F3852B50>
+test_login.py-[LineNo:23]-2022-04-19 09:54:47,169-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 09:54:47,169-INFO------------>开始执行测试案例:两次密码输入不一致
+test_login.py-[LineNo:37]-2022-04-19 09:54:47,175-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:38]-2022-04-19 09:54:47,175-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:39]-2022-04-19 09:54:47,175-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:19]-2022-04-19 10:40:52,596-INFO-详细参数为: <comon.excel_util.CaseData object at 0x0000023B520849A0>
+test_login.py-[LineNo:23]-2022-04-19 10:40:52,603-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 10:40:52,603-INFO------------>开始执行测试案例:输入错误的用户名
+test_login.py-[LineNo:37]-2022-04-19 10:40:52,614-INFO-返回结果:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:38]-2022-04-19 10:40:52,614-INFO-预期:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:39]-2022-04-19 10:40:52,614-INFO-实际:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:19]-2022-04-19 10:40:52,699-INFO-详细参数为: <comon.excel_util.CaseData object at 0x0000023B52031C70>
+test_login.py-[LineNo:23]-2022-04-19 10:40:52,701-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 10:40:52,701-INFO------------>开始执行测试案例:输入错误的密码
+test_login.py-[LineNo:37]-2022-04-19 10:40:52,710-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:38]-2022-04-19 10:40:52,710-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:39]-2022-04-19 10:40:52,710-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:19]-2022-04-19 10:40:52,711-INFO-详细参数为: <comon.excel_util.CaseData object at 0x0000023B52031BB0>
+test_login.py-[LineNo:23]-2022-04-19 10:40:52,711-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 10:40:52,711-INFO------------>开始执行测试案例:两次密码输入不一致
+test_login.py-[LineNo:37]-2022-04-19 10:40:52,722-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:38]-2022-04-19 10:40:52,722-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:39]-2022-04-19 10:40:52,722-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:20]-2022-04-19 10:41:31,060-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000002489012D580>
+test_login.py-[LineNo:24]-2022-04-19 10:41:31,064-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:25]-2022-04-19 10:41:31,064-INFO------------>开始执行测试案例:输入错误的用户名
+test_login.py-[LineNo:38]-2022-04-19 10:41:31,075-INFO-返回结果:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:39]-2022-04-19 10:41:31,075-INFO-预期:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:40]-2022-04-19 10:41:31,075-INFO-实际:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:20]-2022-04-19 10:41:31,154-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000002489002E190>
+test_login.py-[LineNo:24]-2022-04-19 10:41:31,160-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:25]-2022-04-19 10:41:31,160-INFO------------>开始执行测试案例:输入错误的密码
+test_login.py-[LineNo:38]-2022-04-19 10:41:31,168-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:39]-2022-04-19 10:41:31,168-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:40]-2022-04-19 10:41:31,168-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:20]-2022-04-19 10:41:31,173-INFO-详细参数为: <comon.excel_util.CaseData object at 0x0000024890064E20>
+test_login.py-[LineNo:24]-2022-04-19 10:41:31,174-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:25]-2022-04-19 10:41:31,174-INFO------------>开始执行测试案例:两次密码输入不一致
+test_login.py-[LineNo:38]-2022-04-19 10:41:31,180-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:39]-2022-04-19 10:41:31,180-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:40]-2022-04-19 10:41:31,180-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:24]-2022-04-19 10:45:20,524-INFO-详细参数为: <comon.excel_util.CaseData object at 0x00000218862F0B20>
+test_login.py-[LineNo:28]-2022-04-19 10:45:20,524-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 10:45:20,536-INFO------------>开始执行测试案例:输入错误的用户名
+test_login.py-[LineNo:42]-2022-04-19 10:45:20,546-INFO-返回结果:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:43]-2022-04-19 10:45:20,546-INFO-预期:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:44]-2022-04-19 10:45:20,546-INFO-实际:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:24]-2022-04-19 10:45:20,546-INFO-详细参数为: <comon.excel_util.CaseData object at 0x00000218862F0CA0>
+test_login.py-[LineNo:28]-2022-04-19 10:45:20,551-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 10:45:20,551-INFO------------>开始执行测试案例:输入错误的密码
+test_login.py-[LineNo:42]-2022-04-19 10:45:20,634-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:43]-2022-04-19 10:45:20,634-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:44]-2022-04-19 10:45:20,634-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:24]-2022-04-19 10:45:20,640-INFO-详细参数为: <comon.excel_util.CaseData object at 0x00000218862F0FA0>
+test_login.py-[LineNo:28]-2022-04-19 10:45:20,645-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 10:45:20,646-INFO------------>开始执行测试案例:两次密码输入不一致
+test_login.py-[LineNo:42]-2022-04-19 10:45:20,655-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:43]-2022-04-19 10:45:20,655-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:44]-2022-04-19 10:45:20,655-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:24]-2022-04-19 10:46:16,200-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000002451D73E9D0>
+test_login.py-[LineNo:28]-2022-04-19 10:46:16,202-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 10:46:16,202-INFO------------>开始执行测试案例:输入错误的用户名
+test_login.py-[LineNo:42]-2022-04-19 10:46:16,208-INFO-返回结果:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:43]-2022-04-19 10:46:16,211-INFO-预期:{"code": 100, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:44]-2022-04-19 10:46:16,211-INFO-实际:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:24]-2022-04-19 10:46:16,212-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000002451D73EB50>
+test_login.py-[LineNo:28]-2022-04-19 10:46:16,214-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 10:46:16,214-INFO------------>开始执行测试案例:输入错误的密码
+test_login.py-[LineNo:42]-2022-04-19 10:46:16,214-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:43]-2022-04-19 10:46:16,214-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:44]-2022-04-19 10:46:16,214-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:24]-2022-04-19 10:46:16,228-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000002451D73EE50>
+test_login.py-[LineNo:28]-2022-04-19 10:46:16,230-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 10:46:16,230-INFO------------>开始执行测试案例:两次密码输入不一致
+test_login.py-[LineNo:42]-2022-04-19 10:46:16,235-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:43]-2022-04-19 10:46:16,235-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:44]-2022-04-19 10:46:16,235-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:24]-2022-04-19 11:49:14,466-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000002107A3CD4C0>
+test_login.py-[LineNo:28]-2022-04-19 11:49:14,472-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 11:49:14,472-INFO------------>开始执行测试案例:输入错误的用户名
+test_login.py-[LineNo:42]-2022-04-19 11:49:14,477-INFO-返回结果:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:43]-2022-04-19 11:49:14,477-INFO-预期:{"code": 100, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:44]-2022-04-19 11:49:14,477-INFO-实际:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:53]-2022-04-19 11:49:14,482-ERROR-测试案例【1】实际结果与预期结果不一致
+test_login.py-[LineNo:56]-2022-04-19 11:49:14,482-INFO-data=/['code']:预期值:100<class 'int'>,实际值:1005<class 'int'>
+test_login.py-[LineNo:24]-2022-04-19 11:49:14,484-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000002107A380C10>
+test_login.py-[LineNo:28]-2022-04-19 11:49:14,484-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 11:49:14,485-INFO------------>开始执行测试案例:输入错误的密码
+test_login.py-[LineNo:42]-2022-04-19 11:49:14,490-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:43]-2022-04-19 11:49:14,490-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:44]-2022-04-19 11:49:14,490-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:24]-2022-04-19 11:49:14,494-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000002107A380EE0>
+test_login.py-[LineNo:28]-2022-04-19 11:49:14,494-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 11:49:14,494-INFO------------>开始执行测试案例:两次密码输入不一致
+test_login.py-[LineNo:42]-2022-04-19 11:49:14,501-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:43]-2022-04-19 11:49:14,501-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:44]-2022-04-19 11:49:14,501-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:24]-2022-04-19 11:52:22,408-INFO-详细参数为: <comon.excel_util.CaseData object at 0x0000029D9464D490>
+test_login.py-[LineNo:28]-2022-04-19 11:52:22,417-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 11:52:22,417-INFO------------>开始执行测试案例:输入错误的用户名
+test_login.py-[LineNo:42]-2022-04-19 11:52:22,418-INFO-返回结果:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:43]-2022-04-19 11:52:22,425-INFO-预期:{"code": 100, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:44]-2022-04-19 11:52:22,425-INFO-实际:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:53]-2022-04-19 11:52:22,425-ERROR-测试案例【1】实际结果与预期结果不一致
+test_login.py-[LineNo:56]-2022-04-19 11:52:22,425-INFO-data=/['code']:预期值:100<class 'int'>,实际值:1005<class 'int'>
+test_login.py-[LineNo:24]-2022-04-19 11:52:22,712-INFO-详细参数为: <comon.excel_util.CaseData object at 0x0000029D94601BE0>
+test_login.py-[LineNo:28]-2022-04-19 11:52:22,713-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 11:52:22,713-INFO------------>开始执行测试案例:输入错误的密码
+test_login.py-[LineNo:42]-2022-04-19 11:52:22,720-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:43]-2022-04-19 11:52:22,720-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:44]-2022-04-19 11:52:22,720-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:24]-2022-04-19 11:52:22,725-INFO-详细参数为: <comon.excel_util.CaseData object at 0x0000029D94601EB0>
+test_login.py-[LineNo:28]-2022-04-19 11:52:22,727-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 11:52:22,727-INFO------------>开始执行测试案例:两次密码输入不一致
+test_login.py-[LineNo:42]-2022-04-19 11:52:22,727-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:43]-2022-04-19 11:52:22,732-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:44]-2022-04-19 11:52:22,732-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:24]-2022-04-19 12:00:17,288-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000001AA7D17D4F0>
+test_login.py-[LineNo:28]-2022-04-19 12:00:17,297-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 12:00:17,297-INFO------------>开始执行测试案例:输入错误的用户名
+test_login.py-[LineNo:42]-2022-04-19 12:00:17,304-INFO-返回结果:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:43]-2022-04-19 12:00:17,304-INFO-预期:{"code": 100, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:44]-2022-04-19 12:00:17,304-INFO-实际:{"code": 1005, "msg": "用户名必须以字母开头，由字母和数字组成 6-8位的字符串"}
+test_login.py-[LineNo:53]-2022-04-19 12:00:17,306-ERROR-测试案例【1】实际结果与预期结果不一致
+test_login.py-[LineNo:56]-2022-04-19 12:00:17,306-INFO-data=/['code']:预期值:100<class 'int'>,实际值:1005<class 'int'>
+test_login.py-[LineNo:76]-2022-04-19 12:00:17,371-INFO------------>结束执行测试案例：【输入错误的用户名】
+test_login.py-[LineNo:77]-2022-04-19 12:00:17,371-INFO-*************** 结束执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 12:00:17,394-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000001AA7D131C40>
+test_login.py-[LineNo:28]-2022-04-19 12:00:17,395-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 12:00:17,395-INFO------------>开始执行测试案例:输入错误的密码
+test_login.py-[LineNo:42]-2022-04-19 12:00:17,395-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:43]-2022-04-19 12:00:17,401-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:44]-2022-04-19 12:00:17,401-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:76]-2022-04-19 12:00:17,401-INFO------------>结束执行测试案例：【输入错误的密码】
+test_login.py-[LineNo:77]-2022-04-19 12:00:17,401-INFO-*************** 结束执行用例 ***************
+test_login.py-[LineNo:24]-2022-04-19 12:00:17,401-INFO-详细参数为: <comon.excel_util.CaseData object at 0x000001AA7D131F10>
+test_login.py-[LineNo:28]-2022-04-19 12:00:17,415-INFO-*************** 开始执行用例 ***************
+test_login.py-[LineNo:29]-2022-04-19 12:00:17,415-INFO------------>开始执行测试案例:两次密码输入不一致
+test_login.py-[LineNo:42]-2022-04-19 12:00:17,415-INFO-返回结果:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:43]-2022-04-19 12:00:17,415-INFO-预期:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:44]-2022-04-19 12:00:17,415-INFO-实际:{"code": 1006, "msg": "密码必须为7-11位字母和数字"}
+test_login.py-[LineNo:76]-2022-04-19 12:00:17,422-INFO------------>结束执行测试案例：【两次密码输入不一致】
+test_login.py-[LineNo:77]-2022-04-19 12:00:17,422-INFO-*************** 结束执行用例 ***************

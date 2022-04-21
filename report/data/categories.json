@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:82: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "children" : [ {
+        "name" : "输入错误的用户名",
+        "uid" : "2e8b6a9a441c1421",
+        "parentUid" : "1e7c49d38d532f5a2b03362589af2845",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650511270138,
+          "stop" : 1650511270138,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 99,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'case_id': 1, 'case_title': '输入错误的用户名', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin\",\"password\":\"admin01\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 100, \"msg\": \"用户名必须以字母开头，由字母和数字组成 6-8位的字符串\"}', 'app_name': '登录接口', 'demo': '嗯嗯'}" ]
+      }, {
+        "name" : "确认密码输入为空",
+        "uid" : "2ddbafef8ae34cbd",
+        "parentUid" : "1e7c49d38d532f5a2b03362589af2845",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650511270265,
+          "stop" : 1650511270265,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 8,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'case_id': 4, 'case_title': '确认密码输入为空', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1005, \"msg\": \"重复密码不能为空\"}', 'app_name': '注册接口', 'demo': '啊啊'}" ]
+      } ],
+      "uid" : "1e7c49d38d532f5a2b03362589af2845"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

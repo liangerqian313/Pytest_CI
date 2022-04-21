@@ -1,0 +1,80 @@
+{
+  "1ee099853c08e83b466b85648f89aead" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2ddbafef8ae34cbd",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:82: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650511270265,
+        "stop" : 1650511270265,
+        "duration" : 0
+      }
+    } ]
+  },
+  "f1448aed770d7fdd91df4365d7b3461a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4532c7fd1a6fedab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650511270265,
+        "stop" : 1650511270265,
+        "duration" : 0
+      }
+    } ]
+  },
+  "e61a131eafdd190c3a5f0c00ce5a5d87" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "efc82d74b34bfac0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650511270250,
+        "stop" : 1650511270265,
+        "duration" : 15
+      }
+    } ]
+  },
+  "36f2f3d80fe1d5ee04c6e3c3e14bcb9c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2e8b6a9a441c1421",
+      "status" : "failed",
+      "statusDetails" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:82: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+      "time" : {
+        "start" : 1650511270138,
+        "stop" : 1650511270138,
+        "duration" : 0
+      }
+    } ]
+  }
+}

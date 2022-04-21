@@ -1,0 +1,99 @@
+{
+  "uid" : "f3b700e2a81d4133",
+  "name" : "test_login01[case1]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650294494707,
+    "stop" : 1650294494714,
+    "duration" : 7
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'CaseData' object is not subscriptable",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000001D5B826D7C0>\ncase = <comon.excel_util.CaseData object at 0x000001D5B821B5E0>\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        print(case)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n        allure.attach(body=case.res, name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        # logger.info('----------->开始执行测试案例:{}'.format(case['case_title']))\n        response = requests.get(url=case.url, data=eval(case.case_data))\n        # act_res=response.json()\n        allure.attach(body=str(response), name='响应结果')\n        # # 校验\n        flag = False\n        # 返回结果\n        if not response:\n            flag = True\n            with allure.step(\"错误原因\"):\n                allure.attach(\"接口异常，没有获取到响应结果\", \"结果\", allure.attachment_type.TEXT)\n        else:\n            _res = response.content.decode(encoding=\"utf-8\")\n            logger.info('返回结果:{0}'.format(_res))\n>           logger.info('预期:{}'.format(case['res']))\nE           TypeError: 'CaseData' object is not subscriptable\n\ntestcase\\test_login.py:37: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: 'CaseData' object is not subscriptable",
+    "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000001D5B826D7C0>\ncase = <comon.excel_util.CaseData object at 0x000001D5B821B5E0>\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        print(case)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n        allure.attach(body=case.res, name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        # logger.info('----------->开始执行测试案例:{}'.format(case['case_title']))\n        response = requests.get(url=case.url, data=eval(case.case_data))\n        # act_res=response.json()\n        allure.attach(body=str(response), name='响应结果')\n        # # 校验\n        flag = False\n        # 返回结果\n        if not response:\n            flag = True\n            with allure.step(\"错误原因\"):\n                allure.attach(\"接口异常，没有获取到响应结果\", \"结果\", allure.attachment_type.TEXT)\n        else:\n            _res = response.content.decode(encoding=\"utf-8\")\n            logger.info('返回结果:{0}'.format(_res))\n>           logger.info('预期:{}'.format(case['res']))\nE           TypeError: 'CaseData' object is not subscriptable\n\ntestcase\\test_login.py:37: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "245bea94d028623d",
+      "name" : "接口路径",
+      "source" : "245bea94d028623d.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "32b47bc3c29a459",
+      "name" : "请求参数",
+      "source" : "32b47bc3c29a459.attach",
+      "type" : "text/plain",
+      "size" : 165
+    }, {
+      "uid" : "1bf55ec7444f4c54",
+      "name" : "预期结果",
+      "source" : "1bf55ec7444f4c54.attach",
+      "type" : "text/plain",
+      "size" : 62
+    }, {
+      "uid" : "dc93032b7f39d336",
+      "name" : "响应结果",
+      "source" : "dc93032b7f39d336.attach",
+      "type" : "text/plain",
+      "size" : 16
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "2624-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comon.excel_util.CaseData object at 0x000001D5B821B5E0>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f3b700e2a81d4133.json",
+  "parameterValues" : [ "<comon.excel_util.CaseData object at 0x000001D5B821B5E0>" ]
+}

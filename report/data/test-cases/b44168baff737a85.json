@@ -1,0 +1,168 @@
+{
+  "uid" : "b44168baff737a85",
+  "name" : "输入错误的用户名",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "36f2f3d80fe1d5ee04c6e3c3e14bcb9c",
+  "time" : {
+    "start" : 1650509029418,
+    "stop" : 1650509029402,
+    "duration" : -16
+  },
+  "status" : "failed",
+  "statusMessage" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:82: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+  "statusTrace" : "tp = <class 'pytest_assume.plugin.FailedAssumption'>, value = None, tb = None\n\n    def reraise(tp, value, tb=None):\n        try:\n            if value is None:\n                value = tp()\n            if value.__traceback__ is not tb:\n>               raise value.with_traceback(tb)\nE               pytest_assume.plugin.FailedAssumption: \nE               1 Failed Assumptions:\nE               \nE               testcase\\test_login.py:82: AssumptionFailure\nE               >>\tpytest.assume(flag == False)\nE               AssertionError: assert False\n\nD:\\Python\\lib\\site-packages\\six.py:718: FailedAssumption",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "pytest_assume.plugin.FailedAssumption: \n1 Failed Assumptions:\n\ntestcase\\test_login.py:82: AssumptionFailure\n>>\tpytest.assume(flag == False)\nAssertionError: assert False",
+    "statusTrace" : "tp = <class 'pytest_assume.plugin.FailedAssumption'>, value = None, tb = None\n\n    def reraise(tp, value, tb=None):\n        try:\n            if value is None:\n                value = tp()\n            if value.__traceback__ is not tb:\n>               raise value.with_traceback(tb)\nE               pytest_assume.plugin.FailedAssumption: \nE               1 Failed Assumptions:\nE               \nE               testcase\\test_login.py:82: AssumptionFailure\nE               >>\tpytest.assume(flag == False)\nE               AssertionError: assert False\n\nD:\\Python\\lib\\site-packages\\six.py:718: FailedAssumption",
+    "steps" : [ {
+      "name" : "预期与结果",
+      "time" : {
+        "start" : 1650509029426,
+        "stop" : 1650509029427,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "389fa9ffaad552de",
+        "name" : "预期",
+        "source" : "389fa9ffaad552de.json",
+        "type" : "application/json",
+        "size" : 100
+      }, {
+        "uid" : "c95c963a0c587f58",
+        "name" : "结果",
+        "source" : "c95c963a0c587f58.json",
+        "type" : "application/json",
+        "size" : 101
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应失败原因",
+      "time" : {
+        "start" : 1650509029427,
+        "stop" : 1650509029427,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e39aa7c559973409",
+        "name" : "数据",
+        "source" : "e39aa7c559973409.txt",
+        "type" : "text/plain",
+        "size" : 64
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1650509029427,
+        "stop" : 1650509029538,
+        "duration" : 111
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "a78703a44129caec",
+      "name" : "接口路径",
+      "source" : "a78703a44129caec.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "96697fa21352607f",
+      "name" : "请求参数",
+      "source" : "96697fa21352607f.attach",
+      "type" : "text/plain",
+      "size" : 167
+    }, {
+      "uid" : "30cbe61283d989ef",
+      "name" : "预期结果",
+      "source" : "30cbe61283d989ef.attach",
+      "type" : "text/plain",
+      "size" : 100
+    }, {
+      "uid" : "3ff62a12f550156a",
+      "name" : "响应状态",
+      "source" : "3ff62a12f550156a.attach",
+      "type" : "text/plain",
+      "size" : 16
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "登录"
+  }, {
+    "name" : "feature",
+    "value" : "master"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "8532-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 1, 'case_title': '输入错误的用户名', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin\",\"password\":\"admin01\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 100, \"msg\": \"用户名必须以字母开头，由字母和数字组成 6-8位的字符串\"}', 'app_name': '登录'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b44168baff737a85.json",
+  "parameterValues" : [ "{'case_id': 1, 'case_title': '输入错误的用户名', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin\",\"password\":\"admin01\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 100, \"msg\": \"用户名必须以字母开头，由字母和数字组成 6-8位的字符串\"}', 'app_name': '登录'}" ]
+}

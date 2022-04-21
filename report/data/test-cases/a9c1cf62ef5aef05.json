@@ -1,0 +1,93 @@
+{
+  "uid" : "a9c1cf62ef5aef05",
+  "name" : "test_login01[case2]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "f1448aed770d7fdd91df4365d7b3461a",
+  "time" : {
+    "start" : 1650461863445,
+    "stop" : 1650461863452,
+    "duration" : 7
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: the JSON object must be str, bytes or bytearray, not Response",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000001B938286B20>\ncase = {'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birth...il\":\"19999@163,com\"}', 'case_id': 3, 'case_title': '两次密码输入不一致', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        # print(case,type(case))\n        logger.info(\"详细参数为: {}\".format(case['case_title']))\n        allure.attach(body=case['url'], name='接口路径')\n        allure.attach(body=case['case_data'], name='请求参数')\n        allure.attach(body=case['res'], name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        logger.info('----------->开始执行测试案例:{}'.format(case['case_title']))\n        response = requests.get(url=case['url'], data=eval(case['case_data']))\n        # act_res=response.json()\n>       allure.attach(body=json.loads(response), name='响应结果')\n\ntestcase\\test_login.py:31: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ns = <Response [200]>, cls = None, object_hook = None, parse_float = None\nparse_int = None, parse_constant = None, object_pairs_hook = None, kw = {}\n\n    def loads(s, *, cls=None, object_hook=None, parse_float=None,\n            parse_int=None, parse_constant=None, object_pairs_hook=None, **kw):\n        \"\"\"Deserialize ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance\n        containing a JSON document) to a Python object.\n    \n        ``object_hook`` is an optional function that will be called with the\n        result of any object literal decode (a ``dict``). The return value of\n        ``object_hook`` will be used instead of the ``dict``. This feature\n        can be used to implement custom decoders (e.g. JSON-RPC class hinting).\n    \n        ``object_pairs_hook`` is an optional function that will be called with the\n        result of any object literal decoded with an ordered list of pairs.  The\n        return value of ``object_pairs_hook`` will be used instead of the ``dict``.\n        This feature can be used to implement custom decoders.  If ``object_hook``\n        is also defined, the ``object_pairs_hook`` takes priority.\n    \n        ``parse_float``, if specified, will be called with the string\n        of every JSON float to be decoded. By default this is equivalent to\n        float(num_str). This can be used to use another datatype or parser\n        for JSON floats (e.g. decimal.Decimal).\n    \n        ``parse_int``, if specified, will be called with the string\n        of every JSON int to be decoded. By default this is equivalent to\n        int(num_str). This can be used to use another datatype or parser\n        for JSON integers (e.g. float).\n    \n        ``parse_constant``, if specified, will be called with one of the\n        following strings: -Infinity, Infinity, NaN.\n        This can be used to raise an exception if invalid JSON numbers\n        are encountered.\n    \n        To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``\n        kwarg; otherwise ``JSONDecoder`` is used.\n    \n        The ``encoding`` argument is ignored and deprecated since Python 3.1.\n        \"\"\"\n        if isinstance(s, str):\n            if s.startswith('\\ufeff'):\n                raise JSONDecodeError(\"Unexpected UTF-8 BOM (decode using utf-8-sig)\",\n                                      s, 0)\n        else:\n            if not isinstance(s, (bytes, bytearray)):\n>               raise TypeError(f'the JSON object must be str, bytes or bytearray, '\n                                f'not {s.__class__.__name__}')\nE               TypeError: the JSON object must be str, bytes or bytearray, not Response\n\nD:\\Python\\lib\\json\\__init__.py:341: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: the JSON object must be str, bytes or bytearray, not Response",
+    "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000001B938286B20>\ncase = {'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birth...il\":\"19999@163,com\"}', 'case_id': 3, 'case_title': '两次密码输入不一致', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}', ...}\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        # print(case,type(case))\n        logger.info(\"详细参数为: {}\".format(case['case_title']))\n        allure.attach(body=case['url'], name='接口路径')\n        allure.attach(body=case['case_data'], name='请求参数')\n        allure.attach(body=case['res'], name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        logger.info('----------->开始执行测试案例:{}'.format(case['case_title']))\n        response = requests.get(url=case['url'], data=eval(case['case_data']))\n        # act_res=response.json()\n>       allure.attach(body=json.loads(response), name='响应结果')\n\ntestcase\\test_login.py:31: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ns = <Response [200]>, cls = None, object_hook = None, parse_float = None\nparse_int = None, parse_constant = None, object_pairs_hook = None, kw = {}\n\n    def loads(s, *, cls=None, object_hook=None, parse_float=None,\n            parse_int=None, parse_constant=None, object_pairs_hook=None, **kw):\n        \"\"\"Deserialize ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance\n        containing a JSON document) to a Python object.\n    \n        ``object_hook`` is an optional function that will be called with the\n        result of any object literal decode (a ``dict``). The return value of\n        ``object_hook`` will be used instead of the ``dict``. This feature\n        can be used to implement custom decoders (e.g. JSON-RPC class hinting).\n    \n        ``object_pairs_hook`` is an optional function that will be called with the\n        result of any object literal decoded with an ordered list of pairs.  The\n        return value of ``object_pairs_hook`` will be used instead of the ``dict``.\n        This feature can be used to implement custom decoders.  If ``object_hook``\n        is also defined, the ``object_pairs_hook`` takes priority.\n    \n        ``parse_float``, if specified, will be called with the string\n        of every JSON float to be decoded. By default this is equivalent to\n        float(num_str). This can be used to use another datatype or parser\n        for JSON floats (e.g. decimal.Decimal).\n    \n        ``parse_int``, if specified, will be called with the string\n        of every JSON int to be decoded. By default this is equivalent to\n        int(num_str). This can be used to use another datatype or parser\n        for JSON integers (e.g. float).\n    \n        ``parse_constant``, if specified, will be called with one of the\n        following strings: -Infinity, Infinity, NaN.\n        This can be used to raise an exception if invalid JSON numbers\n        are encountered.\n    \n        To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``\n        kwarg; otherwise ``JSONDecoder`` is used.\n    \n        The ``encoding`` argument is ignored and deprecated since Python 3.1.\n        \"\"\"\n        if isinstance(s, str):\n            if s.startswith('\\ufeff'):\n                raise JSONDecodeError(\"Unexpected UTF-8 BOM (decode using utf-8-sig)\",\n                                      s, 0)\n        else:\n            if not isinstance(s, (bytes, bytearray)):\n>               raise TypeError(f'the JSON object must be str, bytes or bytearray, '\n                                f'not {s.__class__.__name__}')\nE               TypeError: the JSON object must be str, bytes or bytearray, not Response\n\nD:\\Python\\lib\\json\\__init__.py:341: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4a7a7b6930aae098",
+      "name" : "接口路径",
+      "source" : "4a7a7b6930aae098.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "64490c5eb8c40380",
+      "name" : "请求参数",
+      "source" : "64490c5eb8c40380.attach",
+      "type" : "text/plain",
+      "size" : 167
+    }, {
+      "uid" : "60e5c862e6a3b207",
+      "name" : "预期结果",
+      "source" : "60e5c862e6a3b207.attach",
+      "type" : "text/plain",
+      "size" : 62
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "3852-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': 3, 'case_title': '两次密码输入不一致', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a9c1cf62ef5aef05.json",
+  "parameterValues" : [ "{'case_id': 3, 'case_title': '两次密码输入不一致', 'url': 'http://127.0.0.1:6666/business/regist_form', 'case_data': '{\"username\":\"admin01\",\"password\":\"admin\",\"re_password\":\"admin01\",\"phone\":\"15736884464\",\"sex\":\"女\",\"birthday\":\"1995-04-03\",\"qq\":\"12345@qq.com\",\"email\":\"19999@163,com\"}', 'res': '{\"code\": 1006, \"msg\": \"密码必须为7-11位字母和数字\"}'}" ]
+}

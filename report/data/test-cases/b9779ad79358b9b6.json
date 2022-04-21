@@ -1,0 +1,93 @@
+{
+  "uid" : "b9779ad79358b9b6",
+  "name" : "test_login01[case1]",
+  "fullName" : "testcase.test_login.TestLogin#test_login01",
+  "historyId" : "e61a131eafdd190c3a5f0c00ce5a5d87",
+  "time" : {
+    "start" : 1650292731331,
+    "stop" : 1650292731332,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'res_body' is not defined",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000001AE41AEC400>\ncase = <comon.excel_util.CaseData object at 0x000001AE41A9B6A0>\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        print(case)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n        allure.attach(body=case.res, name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        # logger.info('----------->开始执行测试案例:{}'.format(case['case_title']))\n        response = requests.get(url=case.url, data=eval(case.case_data))\n        act_res=response.json()\n        print(act_res)\n>       allure.attach(body=str(res_body), name='响应结果')\nE       NameError: name 'res_body' is not defined\n\ntestcase\\test_login.py:27: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'res_body' is not defined",
+    "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000001AE41AEC400>\ncase = <comon.excel_util.CaseData object at 0x000001AE41A9B6A0>\n\n    @pytest.mark.parametrize('case',ExcelUtil().read_excel('login'))\n    def test_login01(self, case):\n        print(case)\n        allure.attach(body=case.url, name='接口路径')\n        allure.attach(body=case.case_data, name='请求参数')\n        allure.attach(body=case.res, name='预期结果')\n        logger.info(\"*************** 开始执行用例 ***************\")\n        # logger.info('----------->开始执行测试案例:{}'.format(case['case_title']))\n        response = requests.get(url=case.url, data=eval(case.case_data))\n        act_res=response.json()\n        print(act_res)\n>       allure.attach(body=str(res_body), name='响应结果')\nE       NameError: name 'res_body' is not defined\n\ntestcase\\test_login.py:27: NameError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e4476f67915ddd09",
+      "name" : "接口路径",
+      "source" : "e4476f67915ddd09.attach",
+      "type" : "text/plain",
+      "size" : 42
+    }, {
+      "uid" : "74e4aad942f24068",
+      "name" : "请求参数",
+      "source" : "74e4aad942f24068.attach",
+      "type" : "text/plain",
+      "size" : 165
+    }, {
+      "uid" : "59bad3406d98331d",
+      "name" : "预期结果",
+      "source" : "59bad3406d98331d.attach",
+      "type" : "text/plain",
+      "size" : 62
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "Mikey"
+  }, {
+    "name" : "thread",
+    "value" : "9488-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "<comon.excel_util.CaseData object at 0x000001AE41A9B6A0>"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b9779ad79358b9b6.json",
+  "parameterValues" : [ "<comon.excel_util.CaseData object at 0x000001AE41A9B6A0>" ]
+}
